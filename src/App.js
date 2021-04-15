@@ -1,12 +1,14 @@
-import { useState } from "react";
 import "./App.css";
+import Food from "./components/Food";
+import Movie from "./components/Movie";
 
 function App() {
-  fetch("https:/www.themealdb.com/api/json/v1/1/random.php")
-    .then((res) => res.json())
-    .then((data) => console.log(data));
-
-  return <div className="App"></div>;
+  return (
+    <div className="App">
+      <Food />
+      <Movie />
+    </div>
+  );
 }
 
 export default App;
