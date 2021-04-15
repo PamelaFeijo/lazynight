@@ -1,19 +1,13 @@
-import { useEffect, useState } from "react";
-
-function Movie() {
-  const [showMovie, setShowMovie] = useState("");
-
-  function getMovie() {
-    fetch("https:/www.omdbapi.com/?i=tt3896198&apikey=be19834b")
-      .then((res) => res.json())
-      .then((data) => setShowMovie(data));
-  }
-
-  useEffect(getMovie, []);
-
+function Movie(props) {
+  const { showMovie, getMovie } = props;
   return (
     <div>
-      <img src={showMovie.Poster} alt="poster" />
+      <button className="movie-btn" onClick={getMovie}>
+        Get Movie
+      </button>
+      <div>
+        <img className="small-image" src={showMovie.Poster} alt="" />
+      </div>
     </div>
   );
 }
