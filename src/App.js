@@ -8,6 +8,8 @@ function App() {
   const [showMovie, setShowMovie] = useState("");
   const [showFood, setShowFood] = useState("");
 
+  const [done, setDone] = useState(0);
+
   function getMovie() {
     fetch("https:/www.omdbapi.com/?i=tt3896198&apikey=be19834b")
       .then((res) => res.json())
@@ -20,11 +22,23 @@ function App() {
       .then((dataf) => setShowFood(dataf.meals[0]));
   }
 
+  function handleAddDone() {
+    setDone(done + 20);
+  }
+
+  function handleCutDone() {
+    setDone(done - 20);
+  }
+
   return (
     <div className="App">
       <Movie showMovie={showMovie} getMovie={getMovie} />
       <Food showFood={showFood} getFood={getFood} />
-      <ProgressBar />
+      <ProgressBar
+        done={done}
+        handleAddDone={handleAddDone}
+        handleCutDone={handleCutDone}
+      />
     </div>
   );
 }

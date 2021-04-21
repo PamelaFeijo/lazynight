@@ -72,6 +72,62 @@ code {
   box-shadow: 5px 7px 8px 3px rgba(0, 0, 0, 0.48);
 }
 
+/* progress-bar */
+
+.progress-container {
+  display: flex;
+  justify-content: center;
+}
+.progress-bar {
+  background-color: #d8d8d8;
+  border-radius: 20px;
+  position: relative;
+  margin: 15px 0;
+  height: 30px;
+  width: 300px;
+}
+
+.progress-done {
+  background: linear-gradient(to left, #210976, #7c1486);
+  box-shadow: 0 3px 3px -5px #f2709c, 0 2px 5px #f2709c;
+  border-radius: 20px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 0;
+  opacity: 0;
+  transition: 1s ease 0.3s;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.back-btn {
+  padding: 4px;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  background-color: #be70f2;
+  margin: 20px;
+}
+
+.next-btn {
+  padding: 4px;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  background-color: #be70f2;
+  margin: 20px;
+}
+
 @media only screen and (max-width: 700px) {
   /* quiz page */
 
