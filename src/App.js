@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import Movie from "./components/Movie";
 import Food from "./components/Food";
+import Quiz from "./components/Quiz";
 import ProgressBar from "./components/ProgressBar";
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
     <div className="App">
       <Movie showMovie={showMovie} getMovie={getMovie} />
       <Food showFood={showFood} getFood={getFood} />
+      <Quiz />
       <ProgressBar />
     </div>
   );
