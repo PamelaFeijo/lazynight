@@ -1,3 +1,13 @@
+const content = [
+  {
+    question: "Ciao ciao ciao?",
+    answerOne: "Yes",
+    answerTwo: "No",
+    answerThree: "Maybe",
+    answerFour: "Don't think so",
+  },
+];
+
 function Quiz() {
   return (
     <div class="quiz-container">
