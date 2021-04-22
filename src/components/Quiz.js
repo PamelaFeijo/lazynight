@@ -1,23 +1,59 @@
 const content = [
   {
-    question: "Ciao ciao ciao?",
+    question: "Do you want a cat?",
     answerOne: "Yes",
     answerTwo: "No",
     answerThree: "Maybe",
     answerFour: "Don't think so",
   },
+  {
+    question: "Which letter do you prefer?",
+    answerOne: "A",
+    answerTwo: "B",
+    answerThree: "C",
+    answerFour: "D",
+  },
+  {
+    question: "Which number is higher?",
+    answerOne: "1",
+    answerTwo: "2",
+    answerThree: "3",
+    answerFour: "4",
+  },
+  {
+    question: "Are you happy?",
+    answerOne: "Yes",
+    answerTwo: "No",
+    answerThree: "Maybe",
+    answerFour: "Don't think so",
+  },
+  {
+    question: "Which cat do you want?",
+    answerOne: "Anca",
+    answerTwo: "Francesco",
+    answerThree: "Pamela",
+    answerFour: "Anelisy",
+  },
 ];
 
-function Quiz() {
+function Quiz({ movieQuestion, handleAddDone }) {
   return (
     <div class="quiz-container">
       <div class="quiz-question">
-        <h2>What is your favorite cat?</h2>
+        <h2>{content[movieQuestion].question}</h2>
       </div>
-      <div class="quiz-answer">Anca</div>
-      <div class="quiz-answer">Pamela</div>
-      <div class="quiz-answer">Francesco</div>
-      <div class="quiz-answer">Anelisy</div>
+      <button class="quiz-answer" onClick={handleAddDone}>
+        {content[movieQuestion].answerOne}
+      </button>
+      <button class="quiz-answer" onClick={handleAddDone}>
+        {content[movieQuestion].answerTwo}
+      </button>
+      <button class="quiz-answer" onClick={handleAddDone}>
+        {content[movieQuestion].answerThree}
+      </button>
+      <button class="quiz-answer" onClick={handleAddDone}>
+        {content[movieQuestion].answerFour}
+      </button>
     </div>
   );
 }
