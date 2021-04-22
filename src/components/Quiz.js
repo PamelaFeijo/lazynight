@@ -34,11 +34,30 @@ const content = [
     answerThree: "Pamela",
     answerFour: "Anelisy",
   },
+  {
+    question: "Which cat do you want?",
+    answerOne: "Anca",
+    answerTwo: "Francesco",
+    answerThree: "Pamela",
+    answerFour: "Anelisy",
+  },
+  {
+    question: "Which cat do you want?",
+    answerOne: "Anca",
+    answerTwo: "Francesco",
+    answerThree: "Pamela",
+    answerFour: "Anelisy",
+  },
 ];
 
-function Quiz({ movieQuestion, handleAddDone }) {
+function Quiz({ done, movieQuestion, handleAddDone }) {
   return (
-    <div class="quiz-container">
+    <div
+      class="quiz-container"
+      style={{
+        display: done === 100 ? "none" : "flex",
+      }}
+    >
       <div class="quiz-question">
         <h2>{content[movieQuestion].question}</h2>
       </div>

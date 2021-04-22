@@ -9,20 +9,23 @@ function App() {
   console.log(movieQuestion);
 
   function handleAddDone() {
-    setMovieQuestion(movieQuestion + 1);
-    setDone(done + 20);
-    console.log(movieQuestion);
+    if (movieQuestion < 5) {
+      setMovieQuestion(movieQuestion + 1);
+      setDone(done + 20);
+    }
   }
 
   function handleCutDone() {
-    setMovieQuestion(movieQuestion - 1);
-    setDone(done - 20);
-    console.log(movieQuestion);
+    if (movieQuestion > 1) {
+      setMovieQuestion(movieQuestion - 1);
+      setDone(done - 20);
+    }
   }
 
   return (
     <div className="App">
       <Quiz
+        done={done}
         movieQuestion={movieQuestion}
         handleAddDone={handleAddDone}
         handleCutDone={handleCutDone}
