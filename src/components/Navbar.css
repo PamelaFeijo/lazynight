@@ -54,6 +54,7 @@
     flex-direction: column;
     list-style-type: none;
     grid-gap: 0px;
+    padding-top: 2.5rem;
   }
   .nav-options.active {
     background: #79a0ff;
