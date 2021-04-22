@@ -6,7 +6,7 @@ function Food(props) {
         Get Food
       </button>
       <div>
-        <img className="small-image" src={showFood.strMealThumb} />
+        <img className="small-image" src={showFood.strMealThumb} alt="" />
       </div>
     </div>
   );
