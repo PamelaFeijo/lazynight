@@ -1,7 +1,13 @@
 import { useState } from "react";
 import "./App.css";
+import "./styles.css";
 import Movie from "./components/Movie";
 import Food from "./components/Food";
+import Navbar from "./components/Navbar";
+import { Switch, Route } from 'react-router-dom';
+import About from "./components/About";
+import Home from "./components/Home";
+
 import ProgressBar from "./components/ProgressBar";
 
 function App() {
@@ -32,13 +38,23 @@ function App() {
 
   return (
     <div className="App">
-      <Movie showMovie={showMovie} getMovie={getMovie} />
-      <Food showFood={showFood} getFood={getFood} />
-      <ProgressBar
-        done={done}
-        handleAddDone={handleAddDone}
-        handleCutDone={handleCutDone}
-      />
+        <Navbar /> 
+        <ProgressBar
+          done={done}
+          handleAddDone={handleAddDone}
+          handleCutDone={handleCutDone}
+        />                
+        <Switch>
+          <Route exact path='/' component={Home} />
+          <Route path='/food'>
+            <Food showFood={showFood} getFood={getFood}/>
+          </Route>  
+          <Route path='/movie'>
+             <Movie showMovie={showMovie} getMovie={getMovie}/>
+          </Route>
+          <Route path='/about' component={About} />
+        </Switch>      
+     
     </div>
   );
 }
