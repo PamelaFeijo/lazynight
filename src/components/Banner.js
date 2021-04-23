@@ -1,27 +1,22 @@
 import "./Banner.css";
-import { useEffect} from "react";
 
 const Banner = (props) => {
- // const [inIndex, setInIndex] = useState();
-
-  useEffect(() => {
-   
-    if (props === "/") {
-        console.log("home")
-    }else if (props === "/about"){
-        console.log("about")
+  const getBannerMessage = () => {
+    if (props.location === "/") {
+      return "Hey there! Don't know what to do tonight";
+    } else if (props.location === "/about") {
+      return "About Page";
+    } else if (props.location === "/movie") {
+      return "Movie Quiz";
+    } else if (props.location === "/food") {
+      return "Food Quiz";
     }
+  };
 
-  }, []); 
- 
-  console.log(props)
+  console.log(props);
   return (
     <div className="banner">
-                
-      <h2>
-        Hey there! Don't know what to do
-        <span className="banner-span"> tonight</span>?
-      </h2>
+      <h2>{getBannerMessage()}</h2>
     </div>
   );
 };
