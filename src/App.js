@@ -3,18 +3,15 @@ import "./App.css";
 import "./styles.css";
 import Movie from "./components/Movie";
 import Food from "./components/Food";
-import Navbar from "./components/Navbar";
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route } from "react-router-dom";
 import About from "./components/About";
+import Header from "./components/Header";
 import Home from "./components/Home";
-
-import ProgressBar from "./components/ProgressBar";
+import Footer from "./components/Footer";
 
 function App() {
   const [showMovie, setShowMovie] = useState("");
   const [showFood, setShowFood] = useState("");
-
-  const [done, setDone] = useState(0);
 
   function getMovie() {
     fetch("https:/www.omdbapi.com/?i=tt3896198&apikey=be19834b")
@@ -28,33 +25,22 @@ function App() {
       .then((dataf) => setShowFood(dataf.meals[0]));
   }
 
-  function handleAddDone() {
-    setDone(done + 20);
-  }
-
-  function handleCutDone() {
-    setDone(done - 20);
-  }
-
   return (
-    <div className="App">
-        <Navbar /> 
-        <ProgressBar
-          done={done}
-          handleAddDone={handleAddDone}
-          handleCutDone={handleCutDone}
-        />                
-        <Switch>
-          <Route exact path='/' component={Home} />
-          <Route path='/food'>
-            <Food showFood={showFood} getFood={getFood}/>
-          </Route>  
-          <Route path='/movie'>
-             <Movie showMovie={showMovie} getMovie={getMovie}/>
-          </Route>
-          <Route path='/about' component={About} />
-        </Switch>      
-     
+    <div className="App page-container">
+      <div className="content-wrap">
+        <Header />        
+      </div>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/food">
+          <Food showFood={showFood} getFood={getFood} />
+        </Route>
+        <Route path="/movie">
+          <Movie showMovie={showMovie} getMovie={getMovie} />
+        </Route>
+        <Route path="/about" component={About} />
+      </Switch>
+      <Footer />
     </div>
   );
 }

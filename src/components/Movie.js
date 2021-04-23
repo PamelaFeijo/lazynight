@@ -1,6 +1,7 @@
 function Movie(props) {
   const { showMovie, getMovie } = props;
   return (
+    
     <div>
       <button className="movie-btn" onClick={getMovie}>
         Get Movie
