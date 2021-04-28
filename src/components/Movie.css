@@ -1,3 +1,14 @@
+.movie-btn {
+    margin: 30px;
+    padding: 0 20px;
+    background-color: rgb(100, 100, 216);
+    color: white;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
 /* quiz page */
 
 .quiz-container {
@@ -21,6 +32,7 @@
   
   .quiz-answer {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 10px 20px;
@@ -117,8 +129,9 @@
       width: 100%;
     }
   
-    .quiz-answer {
+    .quiz-answers {
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       font-family: Verdana, Geneva, Tahoma, sans-serif;

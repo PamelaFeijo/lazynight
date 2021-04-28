@@ -3,11 +3,23 @@ import ProgressBar from "./ProgressBar";
 import "./Movie.css"
 
 function Movie(props) {
-  const { showMovie, getMovie } = props;
+  const { showMovie, getMovie , setGenre } = props;
   const [movieQuestion, setMovieQuestion] = useState(0);
   const [done, setDone] = useState(0);
+  // const [result, setResult] = useState(false)
 
-  function handleAddDone() {
+  function handleAddDone(value) {
+    if(value === 0){
+      setGenre("comedy")
+    }
+    else if(value === 1){
+      setGenre("action")
+    }
+    else if (value === 2) {
+      setGenre("rom")
+    }
+    
+
     if (movieQuestion < 5) {
       setMovieQuestion(movieQuestion + 1);
       setDone(done + 20);
@@ -23,97 +35,112 @@ function Movie(props) {
 
   const content = [
     {
-      question: "Do you want a cat?",
-      answerOne: "Yes",
-      answerTwo: "No",
-      answerThree: "Maybe",
-      answerFour: "Don't think so",
+      question: "What do you feel like watching tonight?",
+      answerOptions: [
+        {answer: "Comedy", value : 0},
+        {answer: "Action movie", value: 1},
+        {answer: "Romance movie", value: 2},
+        {answer: "Random", value: 3}
+      ]
     },
     {
-      question: "Which letter do you prefer?",
-      answerOne: "A",
-      answerTwo: "B",
-      answerThree: "C",
-      answerFour: "D",
+      question: "How do you feel?",
+      answerOptions: [
+        {answer: "I miss the 90s"},
+        {answer: "2005 was only 5 years ago"},
+        {answer: "I should make a Tik Tok right now"},
+        {answer: "I feel nothing."}
+      ]
     },
     {
       question: "Which number is higher?",
-      answerOne: "1",
-      answerTwo: "2",
-      answerThree: "3",
-      answerFour: "4",
+      answerOptions: [
+        {answer: "1"},
+        {answer: "2"},
+        {answer: "3"},
+        {answer: "4"}
+      ]
     },
     {
       question: "Are you happy?",
-      answerOne: "Yes",
-      answerTwo: "No",
-      answerThree: "Maybe",
-      answerFour: "Don't think so",
+      answerOptions: [
+        {answer: "Yes"},
+        {answer: "No"},
+        {answer: "Maybe"},
+        {answer: "Don't think so"}
+      ]
     },
     {
       question: "Which cat do you want?",
-      answerOne: "Anca",
-      answerTwo: "Francesco",
-      answerThree: "Pamela",
-      answerFour: "Anelisy",
+      answerOptions: [
+        {answer: "Anca"},
+        {answer: "Francesco"},
+        {answer: "Pamela"},
+        {answer: "Anelisy"}
+      ]
     },
     {
       question: "Which cat do you want?",
-      answerOne: "Anca",
-      answerTwo: "Francesco",
-      answerThree: "Pamela",
-      answerFour: "Anelisy",
-    },
+      answerOptions: [
+        {answer: "Anca"},
+        {answer: "Francesco"},
+        {answer: "Pamela"},
+        {answer: "Anelisy"}
+      ]
+    }, 
     {
       question: "Which cat do you want?",
-      answerOne: "Anca",
-      answerTwo: "Francesco",
-      answerThree: "Pamela",
-      answerFour: "Anelisy",
-    },
+      answerOptions: [
+        {answer: "Anca"},
+        {answer: "Francesco"},
+        {answer: "Pamela"},
+        {answer: "Anelisy"}
+      ]
+    }, 
   ];
 
+  
 
 
   return (
-    
     <div>
-          <div
-      class="quiz-container"
-      style={{
-        display: done === 100 ? "none" : "flex",
-      }}
-    >
-      <div class="quiz-question">
-        <h2>{content[movieQuestion].question}</h2>
-      </div>
-      <button class="quiz-answer" onClick={handleAddDone}>
-        {content[movieQuestion].answerOne}
-      </button>
-      <button class="quiz-answer" onClick={handleAddDone}>
-        {content[movieQuestion].answerTwo}
-      </button>
-      <button class="quiz-answer" onClick={handleAddDone}>
-        {content[movieQuestion].answerThree}
-      </button>
-      <button class="quiz-answer" onClick={handleAddDone}>
-        {content[movieQuestion].answerFour}
-      </button>
-    </div>
-      <button className="movie-btn" onClick={getMovie}>
-        Get Movie
-      </button>
-      <div>
-        <img className="small-image" src={showMovie.Poster} alt="" />
-      </div>
-      <>
-    <ProgressBar
-          done={done}
-          handleAddDone={handleAddDone}
-          handleCutDone={handleCutDone}
-        />
-    </>
+          { done === 100 ? (
+                  <div className='quiz-result'>
+                     
+                        <img className="movie-poster" src={`http://img.omdbapi.com/?i=${showMovie.imdbID}&h=600&apikey=4d9435f5`}/>
+                        <h1>{showMovie.Title}</h1>
+                        <p> <span>Staring: </span> {showMovie.Actors}</p>
+                        <button className="movie-btn" onClick={getMovie}>Get Result</button>
+
+                        {/* <div>
+
+                            
+                            <p><span>Directed by:</span> {showMovie.Director}</p>
+                            <p>{showMovie.Plot}</p>
+                        </div> */}
+                  </div>
+          ) : (
+            <>
+          <div className="quiz-container" style={{
+            display: done === 100 ? "none" : "flex"}}>
+              <div className="quiz-question">
+                <h2>{content[movieQuestion].question}</h2>
+              </div>
+              <div className="quiz-container">
+						      {content[movieQuestion].answerOptions.map((answerOption, index) => (
+							    <button key={index} className="quiz-answer" onClick={() => handleAddDone(answerOption.value)}>{answerOption.answer}</button>))}
+					    </div>
+          </div>
+          <>
+            <ProgressBar
+            done={done}
+            handleAddDone={handleAddDone}
+            handleCutDone={handleCutDone}/>
+          </>
+          </>
+          )} 
     </div>
   );
 }
+
 export default Movie;
