@@ -38,7 +38,7 @@ function App() {
         return MovieDatabase.rom[i]
       }
     else{
-        let j = Math.floor(Math.random() * 17) + 0;
+        let j = Math.floor(Math.random() * 63) + 0;
         return Random[j]
       }     
    }

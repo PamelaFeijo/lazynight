@@ -8,6 +8,7 @@ function Movie(props) {
   const [done, setDone] = useState(0);
   // const [result, setResult] = useState(false)
 
+
   function handleAddDone(value) {
     if(value === 0){
       setGenre("comedy")
@@ -53,12 +54,12 @@ function Movie(props) {
       ]
     },
     {
-      question: "Which number is higher?",
+      question: "What's your favourite city?",
       answerOptions: [
-        {answer: "1"},
-        {answer: "2"},
-        {answer: "3"},
-        {answer: "4"}
+        {answer: "Paris"},
+        {answer: "London"},
+        {answer: "Berlin"},
+        {answer: "Moscow"}
       ]
     },
     {
@@ -71,12 +72,12 @@ function Movie(props) {
       ]
     },
     {
-      question: "Which cat do you want?",
+      question: "What's your favourite Britney song?",
       answerOptions: [
-        {answer: "Anca"},
-        {answer: "Francesco"},
-        {answer: "Pamela"},
-        {answer: "Anelisy"}
+        {answer: "Oops I did it again!"},
+        {answer: "Toxic"},
+        {answer: "Gimme More"},
+        {answer: "I love Rock'n'Roll"}
       ]
     },
     {
@@ -111,13 +112,6 @@ function Movie(props) {
                         <h1>{showMovie.Title}</h1>
                         <p> <span>Staring: </span> {showMovie.Actors}</p>
                         <button className="movie-btn" onClick={getMovie}>Get Result</button>
-
-                        {/* <div>
-
-                            
-                            <p><span>Directed by:</span> {showMovie.Director}</p>
-                            <p>{showMovie.Plot}</p>
-                        </div> */}
                   </div>
           ) : (
             <>
