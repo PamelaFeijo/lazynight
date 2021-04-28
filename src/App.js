@@ -10,6 +10,7 @@ import Home from "./components/Home";
 import MovieDatabase from "./components/MovieDatabase";
 // import Random from "./components/RandomMovie";
 import Footer from "./components/Footer";
+import QuizButton from "./components/QuizButton";
 
 function App() {
   const [showMovie, setShowMovie] = useState("");
@@ -41,7 +42,7 @@ function App() {
         <Header />
       </div>
       <Switch>
-        <Route exact path="/" component={Home} />
+        <Route exact path="/" component={QuizButton} />
         {/* <Route path="/food">
           <Food showFood={showFood} getFood={getFood} />
         </Route>
