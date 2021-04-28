@@ -7,6 +7,8 @@ import Navbar from "./components/Navbar";
 import { Switch, Route } from 'react-router-dom';
 import About from "./components/About";
 import Home from "./components/Home";
+import MovieDatabase from "./components/MovieDatabase";
+import Random from "./components/RandomMovie";
 
 import ProgressBar from "./components/ProgressBar";
 
@@ -27,6 +29,27 @@ function App() {
       .then((resp) => resp.json())
       .then((dataf) => setShowFood(dataf.meals[0]));
   }
+
+  //Random Movie Function
+  // function RandomMovie() {
+  //         let j = Math.floor(Math.random() * 17) + 0;
+  //         return Random[j]
+  // }
+
+
+  // FETCHES WITH API KEYS
+  //
+  // function getMovie() {
+  //   fetch("http://www.omdbapi.com/?i=" + RandomMovie() + "&apikey=be19834b")
+  //     .then((res) => res.json())
+  //     .then((data) => setShowMovie(data));
+  // }
+
+  // function getFood() {
+  //   fetch("https://www.themealdb.com/api/json/v2/9973533/random.php")
+  //   .then(res => res.json())
+  //   .then(dataf => setShowFood(dataf.meals[0]))
+  // }
 
   function handleAddDone() {
     setDone(done + 20);
