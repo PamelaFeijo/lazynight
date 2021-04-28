@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 .App {
-  font-family: Montserrat;
-  font-weight: 600;
+  font-family: Montserrat;  
   text-align: center;
 }
 
@@ -14,3 +13,4 @@ a {
   margin: 0;
   padding: 0;
 }
+

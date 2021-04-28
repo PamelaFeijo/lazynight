@@ -1,0 +1,16 @@
+.main-footer {
+    color: white;
+    background-color: #000;
+    padding-top: 0.75em;   
+    bottom: 0;
+    width: 100%;
+  }
+
+
+.title-footer{
+  padding: 2.5em;
+}
+
+.title-footer > span{
+  color:#f6d98d;
+}
