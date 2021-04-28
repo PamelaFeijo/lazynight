@@ -1,9 +1,7 @@
-import FoodOrMovie from "./FoodOrMovie";
-
 const Home = () => {
   return (
     <>
-      <FoodOrMovie />
+      <h1>Home</h1>
     </>
   );
 };
