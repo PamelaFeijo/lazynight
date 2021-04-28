@@ -8,38 +8,21 @@ import About from "./components/About";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import MovieDatabase from "./components/MovieDatabase";
-import Random from "./components/RandomMovie";
-
-import ProgressBar from "./components/ProgressBar";
+// import Random from "./components/RandomMovie";
 import Footer from "./components/Footer";
-
 
 function App() {
   const [showMovie, setShowMovie] = useState("");
   const [showFood, setShowFood] = useState("");
 
-  function getMovie() {
-    fetch("https:/www.omdbapi.com/?i=tt3896198&apikey=be19834b")
-      .then((res) => res.json())
-      .then((data) => setShowMovie(data));
-  }
-
-  function getFood() {
-    fetch("https:/www.themealdb.com/api/json/v1/1/random.php")
-      .then((resp) => resp.json())
-      .then((dataf) => setShowFood(dataf.meals[0]));
-  }
-
-
-  //Random Movie Function
+  // // Random Movie Function
   // function RandomMovie() {
-  //         let j = Math.floor(Math.random() * 17) + 0;
-  //         return Random[j]
+  //   let j = Math.floor(Math.random() * 17) + 0;
+  //   return Random[j];
   // }
 
-
   // FETCHES WITH API KEYS
-  //
+
   // function getMovie() {
   //   fetch("http://www.omdbapi.com/?i=" + RandomMovie() + "&apikey=be19834b")
   //     .then((res) => res.json())
@@ -48,32 +31,23 @@ function App() {
 
   // function getFood() {
   //   fetch("https://www.themealdb.com/api/json/v2/9973533/random.php")
-  //   .then(res => res.json())
-  //   .then(dataf => setShowFood(dataf.meals[0]))
+  //     .then((res) => res.json())
+  //     .then((dataf) => setShowFood(dataf.meals[0]));
   // }
-
-  function handleAddDone() {
-    setDone(done + 20);
-  }
-
-  function handleCutDone() {
-    setDone(done - 20);
-  }
-
 
   return (
     <div className="App page-container">
       <div className="content-wrap">
-        <Header />        
+        <Header />
       </div>
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route path="/food">
+        {/* <Route path="/food">
           <Food showFood={showFood} getFood={getFood} />
         </Route>
         <Route path="/movie">
           <Movie showMovie={showMovie} getMovie={getMovie} />
-        </Route>
+        </Route> */}
         <Route path="/about" component={About} />
       </Switch>
       <Footer />
