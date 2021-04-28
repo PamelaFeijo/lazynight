@@ -12,7 +12,6 @@ const Header = () => {
       <Navbar />
       <Banner location={location.pathname} />
       <Title location={location.pathname} />
-      <QuizButton />
     </div>
   );
 };

@@ -8,7 +8,7 @@ import About from "./components/About";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import MovieDatabase from "./components/MovieDatabase";
-import Random from "./components/RandomMovie";
+import RandomMovie from "./components/RandomMovieOption";
 
 import ProgressBar from "./components/ProgressBar";
 import Footer from "./components/Footer";
@@ -52,13 +52,13 @@ function App() {
   //   .then(dataf => setShowFood(dataf.meals[0]))
   // }
 
-  function handleAddDone() {
-    setDone(done + 20);
-  }
+  // function handleAddDone() {
+  //   setDone(done + 20);
+  // }
 
-  function handleCutDone() {
-    setDone(done - 20);
-  }
+  // function handleCutDone() {
+  //   setDone(done - 20);
+  // }
 
 
   return (
