@@ -12,6 +12,11 @@ import MovieDatabase from "./components/MovieDatabase";
 import Footer from "./components/Footer";
 import QuizButton from "./components/QuizButton";
 import Quiz from "./components/Quiz.js";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import { faCheckSquare, faCoffee } from "@fortawesome/free-solid-svg-icons";
+
+library.add(fab, faCheckSquare, faCoffee);
 
 function App() {
   const [showMovie, setShowMovie] = useState("");

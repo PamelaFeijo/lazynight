@@ -3,6 +3,21 @@ import Member from "./Member";
 
 const memberInfo = [
   {
+    name: "Pamela",
+    surname: "Feijò",
+    img: "https://i.ibb.co/Nm8fq4r/pamela.jpg",
+    linkedin: "https://www.linkedin.com/in/pamelafeijo/",
+    github: "https://github.com/PamelaFeijo",
+  },
+  {
+    name: "Francesco",
+    surname: "Luciani",
+    img:
+      "https://i.ibb.co/4dfDK04/Portrait-picture-Francesco-Luciani-copia.jpg",
+    linkedin: "https://www.linkedin.com/in/lucianifrancesco/",
+    github: "https://github.com/francescoluciani",
+  },
+  {
     name: "Anca",
     surname: "Gheorge",
     img: "http://placekitten.com/200/300",
@@ -23,13 +38,15 @@ const About = () => {
       </div>
       <div className="member-container">
         {memberInfo.map((member) => (
-          <Member
-            name={member.name}
-            surname={member.surname}
-            img={member.img}
-            linkedin={member.linkedin}
-            github={member.github}
-          />
+          <div className="member-card">
+            <Member
+              name={member.name}
+              surname={member.surname}
+              img={member.img}
+              linkedin={member.linkedin}
+              github={member.github}
+            />
+          </div>
         ))}
       </div>
     </div>
