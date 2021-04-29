@@ -3,7 +3,7 @@ import ProgressBar from "./ProgressBar";
 import "./Movie.css"
 
 function Movie(props) {
-  const { showMovie, getMovie , setGenre , genre,  decade , setDecade } = props;
+  const { showMovie, getMovie , setGenre , genre,  decade , setDecade , showMovieResult } = props;
   const [movieQuestion, setMovieQuestion] = useState(0);
   const [done, setDone] = useState(0);
   // const [result, setResult] = useState(false)
@@ -142,10 +142,19 @@ function Movie(props) {
     <div>
           { done === 100 ? (
                   <div className='quiz-result'>
+                    { showMovieResult ? (<div className="movie-result">
+                <img className="movie-poster" src={`http://img.omdbapi.com/?i=${showMovie.imdbID}&h=600&apikey=4d9435f5`} alt="poster"/>
+                <div className="result-details">
+                    <h1 className="result-title">{showMovie.Title}</h1>
+                    <p className="result-year"> <span>Year: </span> {showMovie.Year}</p>
+                    <p className="result-duration"> <span>Duration: </span> {showMovie.Runtime}</p>
+                    <p className="result-rating"> <span>Rating: {" "}</span> {showMovie.Ratings[0].Value}</p>
+                    <p className="result-actors"> <span>Staring: </span> {showMovie.Actors}</p>
+                    <p className="result-director"><span>Directed by:</span> {showMovie.Director}</p>
+                    <p className="result-plot">{showMovie.Plot}</p>
+                </div>
+                     </div>) : (<> </>)}
                      
-                        <img className="movie-poster" src={`http://img.omdbapi.com/?i=${showMovie.imdbID}&h=600&apikey=4d9435f5`}/>
-                        <h1>{showMovie.Title}</h1>
-                        <p> <span>Staring: </span> {showMovie.Actors}</p>
                         <button className="movie-btn" onClick={getMovie}>Get Result</button>
                   </div>
           ) : (

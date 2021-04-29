@@ -17,6 +17,7 @@ function App() {
   const [decade , setDecade ] = useState("");
   const [showMovie, setShowMovie] = useState("");
   const [showFood, setShowFood] = useState("");
+  const [showMovieResult, setShowMovieResult] = useState(false);
 
  
   function getFood() {
@@ -74,7 +75,7 @@ function App() {
   function getMovie() {
     fetch("http://www.omdbapi.com/?i=" + RandomMovie() + "&apikey=be19834b")
       .then((res) => res.json())
-      .then((data) => setShowMovie(data));
+      .then((data) => {setShowMovie(data) ; setShowMovieResult(true)});
   }
 
  
@@ -89,7 +90,7 @@ function App() {
           <Food showFood={showFood} getFood={getFood} />
         </Route>
         <Route path="/movie">
-          <Movie showMovie={showMovie} getMovie={getMovie} genre={genre} setGenre={setGenre} decade={decade} setDecade={setDecade}/>
+          <Movie showMovie={showMovie} getMovie={getMovie} genre={genre} setGenre={setGenre} decade={decade} setDecade={setDecade} showMovieResult={showMovieResult}/>
         </Route>
         <Route path="/about" component={About} />
       </Switch>

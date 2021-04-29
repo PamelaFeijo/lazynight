@@ -146,3 +146,25 @@
       margin: 10px 0px;
     }
   }
+
+  /* Movie Results */
+  .result-title{
+    color:#79a0ff;
+  }
+  span {
+    font-weight: bold;
+  }
+  h1.result-title {
+    font-size: 5em;
+  }
+/* .movie-result{
+  display: flex;
+  /* flex-direction: column; */
+  /* justify-content: center;
+} */ 
+
+  .result-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
