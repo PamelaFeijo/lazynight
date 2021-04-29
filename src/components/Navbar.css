@@ -7,13 +7,13 @@
   padding: 0px 40px;
   height: 80px;
 }
-.logo{
+.logo {
   font-size: 1.25rem;
   font-weight: 600;
 }
 .logo-nav {
   display: flex;
-  align-items: center;  
+  align-items: center;
 }
 .logo-container {
   display: flex;
@@ -25,13 +25,13 @@
   display: grid;
   grid-template-columns: repeat(4, auto);
   grid-gap: 50px;
-  list-style-type: none;  
+  list-style-type: none;
 }
 .option :hover {
   color: #0a035b;
   padding: 10px;
   border-radius: 3px;
-  background: #79a0ff;  
+  background: #79a0ff;
   cursor: pointer;
   align-items: center;
 }
@@ -79,7 +79,7 @@
   }
   .option :hover {
     color: #fff;
-  }  
+  }
   .home {
     background: #000;
     border-radius: 3px;
@@ -89,8 +89,7 @@
     align-self: center;
     border-radius: 3px;
   }
-  }
-  .mobile-menu {
-    display: block;
-  }
-
+}
+.mobile-menu {
+  display: block;
+}

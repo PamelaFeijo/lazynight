@@ -1,4 +1,3 @@
-
 import ProgressBar from "./ProgressBar";
 import { useState } from "react";
 
@@ -22,14 +21,13 @@ function Food(props) {
         <img className="small-image" src={showFood.strMealThumb} alt="" />
       </div>
       <>
-    <ProgressBar
+        <ProgressBar
           done={done}
           handleAddDone={handleAddDone}
           handleCutDone={handleCutDone}
         />
-    </>
+      </>
     </div>
   );
 }
 export default Food;
-

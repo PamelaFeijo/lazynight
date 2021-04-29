@@ -1,3 +1,4 @@
+
 function ProgressBar({ done, handleAddDone, handleCutDone }) {
   return (
     <div className="container">
@@ -9,17 +10,32 @@ function ProgressBar({ done, handleAddDone, handleCutDone }) {
           <div
             className="progress-done"
             style={{
+              display: done === 100 ? "none" : "flex",
               opacity: 1,
               width: `${done}%`,
             }}
           >
             {done < 100 ? `${done}%` : "You got it!"}
           </div>
+          <div
+            class="quiz-done"
+            style={{
+              display: done !== 100 ? "none" : "flex",
+            }}
+          >
+            Click here to discover the perfect cat for you!
+          </div>
         </div>
-        <button class="next-btn" onClick={handleAddDone}>
-          Next
-        </button>
       </div>
+      <button
+        class="back-btn"
+        onClick={handleAddDone}
+        style={{
+          display: done === 100 ? "none" : "flex",
+        }}
+      >
+        Next
+      </button>
     </div>
   );
 }

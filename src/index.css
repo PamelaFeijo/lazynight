@@ -160,3 +160,9 @@ code {
     margin: 10px 0px;
   }
 }
+
+/* home */
+
+.container {
+  display: flex;
+}

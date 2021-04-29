@@ -10,7 +10,13 @@ import Home from "./components/Home";
 import MovieDatabase from "./components/MovieDatabase";
 import Random from "./components/RandomMovieOption";
 import Footer from "./components/Footer";
+import QuizButton from "./components/QuizButton";
+import Quiz from "./components/Quiz.js";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import { faCheckSquare, faCoffee } from "@fortawesome/free-solid-svg-icons";
 
+library.add(fab, faCheckSquare, faCoffee);
 
 function App() {
   const [genre , setGenre ] = useState("");
@@ -69,32 +75,38 @@ function App() {
       }     
    }
 
-
   // FETCHES WITH API KEYS
-  
+
   function getMovie() {
     fetch("http://www.omdbapi.com/?i=" + RandomMovie() + "&apikey=be19834b")
       .then((res) => res.json())
       .then((data) => {setShowMovie(data) ; setShowMovieResult(true)});
   }
 
- 
+  // function getFood() {
+  //   fetch("https://www.themealdb.com/api/json/v2/9973533/random.php")
+  //     .then((res) => res.json())
+  //     .then((dataf) => setShowFood(dataf.meals[0]));
+  // }
+
   return (
     <div className="App page-container">
       <div className="content-wrap">
-        <Header />        
-      </div>
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/food">
-          <Food showFood={showFood} getFood={getFood} />
-        </Route>
-        <Route path="/movie">
-          <Movie showMovie={showMovie} getMovie={getMovie} genre={genre} setGenre={setGenre} decade={decade} setDecade={setDecade} showMovieResult={showMovieResult}/>
-        </Route>
-        <Route path="/about" component={About} />
-      </Switch>
+        <Header />
+
+        <Switch>
+          <Route exact path="/" component={QuizButton} />
+          <Route exact path="/food-quiz" component={Quiz} />
+          <Route path="/food">
+            <Food showFood={showFood} getFood={getFood} />
+          </Route>
+          <Route path="/movie">
+            <Movie showMovie={showMovie} getMovie={getMovie} genre={genre} setGenre={setGenre} decade={decade} setDecade={setDecade} showMovieResult={showMovieResult}/>
+          </Route>
+          <Route path="/about" component={About} />
+        </Switch>
       <Footer />
+    </div>
     </div>
   );
 }
