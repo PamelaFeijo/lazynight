@@ -11,6 +11,12 @@ import MovieDatabase from "./components/MovieDatabase";
 // import Random from "./components/RandomMovie";
 import Footer from "./components/Footer";
 import QuizButton from "./components/QuizButton";
+import Quiz from "./components/Quiz.js";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import { faCheckSquare, faCoffee } from "@fortawesome/free-solid-svg-icons";
+
+library.add(fab, faCheckSquare, faCoffee);
 
 function App() {
   const [showMovie, setShowMovie] = useState("");
@@ -40,18 +46,20 @@ function App() {
     <div className="App page-container">
       <div className="content-wrap">
         <Header />
-      </div>
-      <Switch>
-        <Route exact path="/" component={QuizButton} />
-        {/* <Route path="/food">
+
+        <Switch>
+          <Route exact path="/" component={QuizButton} />
+          <Route exact path="/food-quiz" component={Quiz} />
+          {/* <Route path="/food">
           <Food showFood={showFood} getFood={getFood} />
         </Route>
         <Route path="/movie">
           <Movie showMovie={showMovie} getMovie={getMovie} />
         </Route> */}
-        <Route path="/about" component={About} />
-      </Switch>
-      <Footer />
+          <Route path="/about" component={About} />
+        </Switch>
+        <Footer />
+      </div>
     </div>
   );
 }

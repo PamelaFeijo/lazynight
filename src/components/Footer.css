@@ -1,16 +1,15 @@
 .main-footer {
-    color: white;
-    background-color: #000;
-    padding-top: 0.75em;   
-    bottom: 0;
-    width: 100%;
-  }
+  color: white;
+  background-color: #001024;
+  padding-top: 0.75em;
+  bottom: 0;
+  width: 100%;
+}
 
-
-.title-footer{
+.title-footer {
   padding: 2.5em;
 }
 
-.title-footer > span{
-  color:#f6d98d;
+.title-footer > span {
+  color: #f6d98d;
 }
