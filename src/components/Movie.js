@@ -3,7 +3,7 @@ import ProgressBar from "./ProgressBar";
 import "./Movie.css"
 
 function Movie(props) {
-  const { showMovie, getMovie , setGenre } = props;
+  const { showMovie, getMovie , setGenre , genre,  decade , setDecade } = props;
   const [movieQuestion, setMovieQuestion] = useState(0);
   const [done, setDone] = useState(0);
   // const [result, setResult] = useState(false)
@@ -19,6 +19,41 @@ function Movie(props) {
     else if (value === 2) {
       setGenre("rom")
     }
+    else if(genre === "comedy"){
+      if(value === 4){
+        setDecade("90s")
+      }
+      else if(value === 5){
+        setDecade("2000s")
+      } 
+      else if(value === 6){
+        setDecade("2010s")
+      } 
+    }
+    else if(genre === "action"){
+      if(value === 4){
+        setDecade("90s")
+      }
+      else if(value === 5){
+        setDecade("2000s")
+      } 
+      else if(value === 6){
+      setDecade("2010s")
+      } 
+    }
+    else if(genre === "rom"){
+      if(value === 4){
+        setDecade("90s")
+      }
+      else if(value === 5){
+        setDecade("2000s")
+      } 
+      else if(value === 6){
+      setDecade("2010s")
+      } 
+    }
+
+
     
 
     if (movieQuestion < 5) {
@@ -47,10 +82,10 @@ function Movie(props) {
     {
       question: "How do you feel?",
       answerOptions: [
-        {answer: "I miss the 90s" },
-        {answer: "2005 was only 5 years ago"},
-        {answer: "I should make a Tik Tok right now"},
-        {answer: "I feel nothing."}
+        {answer: "I miss the 90s" , value : 4 },
+        {answer: "2005 was only 5 years ago" , value : 5},
+        {answer: "I should make a Tik Tok right now" , value : 6},
+        {answer: "I feel nothing." , value : 6}
       ]
     },
     {

@@ -14,6 +14,7 @@ import Footer from "./components/Footer";
 
 function App() {
   const [genre , setGenre ] = useState("");
+  const [decade , setDecade ] = useState("");
   const [showMovie, setShowMovie] = useState("");
   const [showFood, setShowFood] = useState("");
 
@@ -29,13 +30,37 @@ function App() {
   function RandomMovie() {
     let i = Math.floor(Math.random() * 7) + 0;
     if (genre === "comedy"){
-        return MovieDatabase.comedy[i]
+      if(decade === "90s"){
+        return MovieDatabase.comedy[0][i]
+      }
+      else if(decade === "2000s"){
+        return MovieDatabase.comedy[1][i]
+      }  
+      else if(decade === "2010s"){
+        return MovieDatabase.comedy[2][i]
+      }
       }
     else if (genre === "action"){
-        return MovieDatabase.action[i]
+      if(decade === "90s"){
+        return MovieDatabase.action[0][i]
+      }
+      else if(decade === "2000s"){
+        return MovieDatabase.action[1][i]
+      }  
+      else {
+        return MovieDatabase.action[2][i]
+      }
       }
       else if (genre === "rom"){
-        return MovieDatabase.rom[i]
+        if(decade === "90s"){
+          return MovieDatabase.rom[0][i]
+        }
+        else if(decade === "2000s"){
+          return MovieDatabase.rom[1][i]
+        }  
+        else {
+          return MovieDatabase.rom[2][i]
+        }
       }
     else{
         let j = Math.floor(Math.random() * 63) + 0;
@@ -64,7 +89,7 @@ function App() {
           <Food showFood={showFood} getFood={getFood} />
         </Route>
         <Route path="/movie">
-          <Movie showMovie={showMovie} getMovie={getMovie} setGenre={setGenre}/>
+          <Movie showMovie={showMovie} getMovie={getMovie} genre={genre} setGenre={setGenre} decade={decade} setDecade={setDecade}/>
         </Route>
         <Route path="/about" component={About} />
       </Switch>
