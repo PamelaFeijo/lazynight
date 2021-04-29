@@ -26,9 +26,8 @@ function ProgressBar({ done, handleAddDone, handleCutDone }) {
             Click here to discover the perfect cat for you!
           </div>
         </div>
-      </div>
-      <button
-        class="back-btn"
+        <button
+        class="next-btn"
         onClick={handleAddDone}
         style={{
           display: done === 100 ? "none" : "flex",
@@ -36,6 +35,7 @@ function ProgressBar({ done, handleAddDone, handleCutDone }) {
       >
         Next
       </button>
+      </div>
     </div>
   );
 }
