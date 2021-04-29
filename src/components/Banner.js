@@ -10,6 +10,8 @@ const Banner = (props) => {
       return "Movie Quiz";
     } else if (props.location === "/food") {
       return "Food Quiz";
+    } else if (props.location === "/contact") {
+      return "Contact us";
     }
   };
 
