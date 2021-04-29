@@ -20,9 +20,9 @@ const memberInfo = [
   {
     name: "Anca",
     surname: "Gheorge",
-    img: "http://placekitten.com/200/300",
-    linkedin: "",
-    github: "",
+    img: "https://i.ibb.co/QcJ5zR4/IMG-7584.jpg",
+    linkedin: "https://www.linkedin.com/in/anca-laura-gheorghe-7001151b9/",
+    github: "https://github.com/anca2196",
   },
 ];
 
