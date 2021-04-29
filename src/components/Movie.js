@@ -3,10 +3,9 @@ import ProgressBar from "./ProgressBar";
 import "./Movie.css"
 
 function Movie(props) {
-  const { showMovie, getMovie , setGenre , genre,  decade , setDecade , showMovieResult } = props;
+  const { showMovie, getMovie , setGenre , genre, setDecade , showMovieResult } = props;
   const [movieQuestion, setMovieQuestion] = useState(0);
   const [done, setDone] = useState(0);
-  // const [result, setResult] = useState(false)
 
 
   function handleAddDone(value) {

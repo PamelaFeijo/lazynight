@@ -8,6 +8,10 @@
   margin: 30px;
 }
 
+.bttnTEXT{
+  color: white;
+}
+
 @media only screen and (max-width: 600px) {
   .quiz-button {
     padding: 30px;
