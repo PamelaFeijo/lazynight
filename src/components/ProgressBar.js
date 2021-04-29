@@ -16,7 +16,7 @@ function ProgressBar({ done, handleAddDone, handleCutDone }) {
             {done < 100 ? `${done}%` : "You got it!"}
           </div>
         </div>
-        <button className="next-btn" onClick={handleAddDone}>
+        <button class="next-btn" onClick={handleAddDone}>
           Next
         </button>
       </div>

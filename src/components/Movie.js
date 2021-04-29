@@ -47,7 +47,7 @@ function Movie(props) {
     {
       question: "How do you feel?",
       answerOptions: [
-        {answer: "I miss the 90s"},
+        {answer: "I miss the 90s" },
         {answer: "2005 was only 5 years ago"},
         {answer: "I should make a Tik Tok right now"},
         {answer: "I feel nothing."}
@@ -63,12 +63,12 @@ function Movie(props) {
       ]
     },
     {
-      question: "Are you happy?",
+      question: "Your childhood here was:",
       answerOptions: [
-        {answer: "Yes"},
-        {answer: "No"},
-        {answer: "Maybe"},
-        {answer: "Don't think so"}
+        {answer: "Harry Potter"},
+        {answer: "Luke Skywalker"},
+        {answer: "Iron man"},
+        {answer: "Elle Woods"}
       ]
     },
     {
