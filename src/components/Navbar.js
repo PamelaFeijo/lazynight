@@ -8,7 +8,6 @@ const Navbar = () => {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
-
   return (
     <div className="header">
       <div className="logo-nav">
@@ -16,6 +15,11 @@ const Navbar = () => {
           <p className="logo">LAZYNIGHT</p>
         </div>
         <ul className={click ? "nav-options active" : "nav-options"}>
+        <li className="option" onClick={closeMobileMenu}>
+            <Link to="/" className="sign-up">
+              HOME
+            </Link>
+          </li>
           <li className="option" onClick={closeMobileMenu}>
             <Link to="/food">FOOD QUIZ</Link>
           </li>
@@ -24,12 +28,7 @@ const Navbar = () => {
           </li>
           <li className="option" onClick={closeMobileMenu}>
             <Link to="/about">ABOUT</Link>
-          </li>
-          <li className="option" onClick={closeMobileMenu}>
-            <Link to="/" className="home">
-              HOME
-            </Link>
-          </li>
+          </li>          
         </ul>
       </div>
       <div className="mobile-menu" onClick={handleClick}>

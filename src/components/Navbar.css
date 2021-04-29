@@ -1,5 +1,5 @@
 /*Desktop*/
-.header {
+/* .header {
   display: flex;
   background: #fff;
   justify-content: space-between;
@@ -38,9 +38,13 @@
 .mobile-menu {
   display: none;
 }
-@media (max-width: 648px) {
+.mobile-option {
+  display: none;
+}
+ */
+/*@media (max-width: 648px) {
   /*Mobile */
-  .header {
+/* .header {
     padding: 0px 10px;
   }
   .nav-options {
@@ -48,20 +52,21 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    top: 0;
+    top: 10%;
     left: -100%;
-    opacity: 0;
-    transition: all 0.5s ease;
+    opacity: 100;
+    transition: all 1s ease;
     flex-direction: column;
     list-style-type: none;
     grid-gap: 10px;
     padding-top: 20px;
+    
   }
   .nav-options.active {
-    background: #79a0ff;
+    background: #fff;
     left: 0;
     opacity: 1;
-    transition: all 0.5s ease;
+    transition: all 0.7s ease;
     z-index: 1;
     align-content: center;
     padding-left: 0px;
@@ -89,6 +94,116 @@
     align-self: center;
     border-radius: 3px;
   }
+}
+.mobile-menu {
+  display: block;
+}
+ */
+
+/*Desktop View*/
+.header {
+  display: flex;
+  background: #fff;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 40px;
+  height: 80px;
+}
+.logo {
+  font-weight: bold;
+  font-size: 1.25rem;
+  
+}
+.logo-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* .logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+.nav-options {
+  padding-left: 25px;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 50px;
+  list-style-type: none;
+}
+.mobile-option {
+  display: none;
+}
+ .option :hover {
+    background: black;
+    border-radius: 3px;
+    color: white;
+    padding: 10px 10px;
+    width: 80%;
+    align-self: center;
+    border-radius: 3px;
+} 
+.signin-up {
+  display: flex;
+  padding: 0px 5px;
+  list-style-type: none;
+}
+.mobile-menu {
+  display: none;
+}
+@media (max-width: 800px) {
+  /*Mobile View */
+  .header {
+    padding: 0px 10px;
+  }
+  .nav-options {
+    display: flex;
+    width: 100%;
+    height: 91.25vh;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 0;
+    transition: all 1.5s ease;
+    flex-direction: column;
+    list-style-type: none;
+    grid-gap: 0px;
+  }
+  .nav-options.active {
+    background: #fff;
+    left: 0;
+    opacity: 1;
+    transition: all 0.7s ease;
+    z-index: 1;
+    align-content: center;
+    padding-left: 0px;
+  }
+  .menu-icon {
+    width: 45px;
+    height: 45px;
+  }
+  .option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vw;
+    padding: 30px 0px;
+    font-weight: bold;
+    font-size: 1.125rem;
+  }
+  .option :hover {
+    background: black;
+    border-radius: 3px;
+    color: white;
+    padding: 20px 0px;
+    width: 80%;
+    align-self: center;
+    border-radius: 3px;
+  }
+
+  /* .signin-up {
+    display: none;
+  } */
 }
 .mobile-menu {
   display: block;
