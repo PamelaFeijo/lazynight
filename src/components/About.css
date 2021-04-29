@@ -1,0 +1,24 @@
+.container {
+  display: block;
+  text-align: center;
+}
+.intro {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 40px;
+}
+.member-container {
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+p {
+  margin: auto;
+  text-align: center;
+  line-height: 1.7;
+}
+
+@media only screen and (max-width: 600px) {
+}

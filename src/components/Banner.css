@@ -1,10 +1,10 @@
 .banner {
-background: #000;
-padding: 3rem 1.72rem;
-color: #fff;
-text-transform: uppercase;
+  background: #001024;
+  padding: 3rem 1.72rem;
+  color: #fff;
+  text-transform: uppercase;
 }
 
 .banner-span {
-color: #f6d98e;
+  color: #f6d98e;
 }

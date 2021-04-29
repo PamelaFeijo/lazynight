@@ -5,7 +5,7 @@ const Banner = (props) => {
     if (props.location === "/") {
       return "Hey there! Don't know what to do tonight";
     } else if (props.location === "/about") {
-      return "About Page";
+      return "The Team";
     } else if (props.location === "/movie") {
       return "Movie Quiz";
     } else if (props.location === "/food") {
