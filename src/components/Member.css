@@ -3,6 +3,7 @@
   border: 5px solid white;
   width: 150px;
   height: 150px;
+  object-fit: cover;
 }
 
 .icons {

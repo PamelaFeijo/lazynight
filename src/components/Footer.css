@@ -13,3 +13,14 @@
 .title-footer > span {
   color: #f6d98d;
 }
+
+.icons-footer {
+  margin: 0 10px 30px 10px;
+  font-size: 30px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+p {
+  text-align: center;
+}

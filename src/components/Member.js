@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee } from "@fortawesome/free-solid-svg-icons";
+
 import "./Member.css";
 
 function Member({ name, surname, img, linkedin, github }) {

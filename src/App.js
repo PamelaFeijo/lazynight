@@ -5,6 +5,7 @@ import Movie from "./components/Movie";
 import Food from "./components/Food";
 import { Switch, Route } from "react-router-dom";
 import About from "./components/About";
+import Contact from "./components/Contact";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import MovieDatabase from "./components/MovieDatabase";
@@ -104,6 +105,7 @@ function App() {
             <Movie showMovie={showMovie} getMovie={getMovie} genre={genre} setGenre={setGenre} decade={decade} setDecade={setDecade} showMovieResult={showMovieResult}/>
           </Route>
           <Route path="/about" component={About} />
+          <Route path="/contact" component={Contact} />
         </Switch>
       <Footer />
     </div>
