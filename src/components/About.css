@@ -28,10 +28,9 @@ h2 {
   color: white;
 }
 
-p {
+.intro-p {
   margin: auto;
   text-align: center;
-
   line-height: 1.7;
 }
 
@@ -43,7 +42,7 @@ p {
     padding: 20px;
     border-radius: 10px;
   }
-  p {
+  .intro-p {
     margin: auto;
     text-align: justify;
     text-justify: inter-word;

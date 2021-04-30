@@ -28,7 +28,18 @@ const Navbar = () => {
           </li>
           <li className="option" onClick={closeMobileMenu}>
             <Link to="/about">ABOUT</Link>
-          </li>          
+
+          </li>
+          <li className="option" onClick={closeMobileMenu}>
+            <Link to="/contact">CONTACT</Link>
+          </li>
+          <li className="option" onClick={closeMobileMenu}>
+            <Link to="/" className="home">
+              HOME
+            </Link>
+          </li>
+               
+
         </ul>
       </div>
       <div className="mobile-menu" onClick={handleClick}>
