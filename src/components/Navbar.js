@@ -14,9 +14,9 @@ const Navbar = () => {
         <div className="logo-container">
           <p className="logo">LAZYNIGHT</p>
         </div>
-        <ul className={click ? "nav-options active" : "nav-options"}>
-        <li className="option" onClick={closeMobileMenu}>
-            <Link to="/" className="sign-up">
+        <ul className={click ? "nav-options active" : "nav-options"}>       
+           <li className="option" onClick={closeMobileMenu}>
+            <Link to="/" className="home">
               HOME
             </Link>
           </li>
@@ -27,29 +27,12 @@ const Navbar = () => {
             <Link to="/movie">MOVIE QUIZ</Link>
           </li>
           <li className="option" onClick={closeMobileMenu}>
-            <Link to="/about">ABOUT</Link>
-<<<<<<< HEAD
-<<<<<<< HEAD
-          </li>          
-=======
-=======
+            <Link to="/about">ABOUT</Link>             
 
->>>>>>> cf8717204b50960dcc04b8f1ef73a310be62821a
           </li>
           <li className="option" onClick={closeMobileMenu}>
             <Link to="/contact">CONTACT</Link>
           </li>
-          <li className="option" onClick={closeMobileMenu}>
-            <Link to="/" className="home">
-              HOME
-            </Link>
-          </li>
-<<<<<<< HEAD
->>>>>>> contact-us
-=======
-               
-
->>>>>>> cf8717204b50960dcc04b8f1ef73a310be62821a
         </ul>
       </div>
       <div className="mobile-menu" onClick={handleClick}>
