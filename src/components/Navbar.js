@@ -15,7 +15,7 @@ const Navbar = () => {
           <p className="logo">LAZYNIGHT</p>
         </div>
         <ul className={click ? "nav-options active" : "nav-options"}>
-        <li className="option" onClick={closeMobileMenu}>
+          <li className="option" onClick={closeMobileMenu}>
             <Link to="/" className="sign-up">
               HOME
             </Link>
@@ -28,18 +28,10 @@ const Navbar = () => {
           </li>
           <li className="option" onClick={closeMobileMenu}>
             <Link to="/about">ABOUT</Link>
-
           </li>
           <li className="option" onClick={closeMobileMenu}>
             <Link to="/contact">CONTACT</Link>
           </li>
-          <li className="option" onClick={closeMobileMenu}>
-            <Link to="/" className="home">
-              HOME
-            </Link>
-          </li>
-               
-
         </ul>
       </div>
       <div className="mobile-menu" onClick={handleClick}>
