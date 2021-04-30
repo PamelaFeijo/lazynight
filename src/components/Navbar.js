@@ -29,8 +29,12 @@ const Navbar = () => {
           <li className="option" onClick={closeMobileMenu}>
             <Link to="/about">ABOUT</Link>
 <<<<<<< HEAD
+<<<<<<< HEAD
           </li>          
 =======
+=======
+
+>>>>>>> cf8717204b50960dcc04b8f1ef73a310be62821a
           </li>
           <li className="option" onClick={closeMobileMenu}>
             <Link to="/contact">CONTACT</Link>
@@ -40,7 +44,12 @@ const Navbar = () => {
               HOME
             </Link>
           </li>
+<<<<<<< HEAD
 >>>>>>> contact-us
+=======
+               
+
+>>>>>>> cf8717204b50960dcc04b8f1ef73a310be62821a
         </ul>
       </div>
       <div className="mobile-menu" onClick={handleClick}>
