@@ -1,20 +1,23 @@
 import "./QuizButton.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const QuizButton = () => {
   return (
     <div>
       <div>
         <button className="quiz-button">
-          <Link to="/food-quiz">
+          <NavLink className="bttnTEXT" to="/food-quiz">
             {" "}
-            I DON'T KNOW <br></br>WHAT TO EAT{" "}
-          </Link>
+            I don't know <br></br> what to eat{" "}
+          </NavLink>
         </button>
       </div>
       <div>
         <button className="quiz-button">
-          I DON'T KNOW <br></br>WHAT TO WATCH
+          <NavLink className="bttnTEXT" to="/movie">
+          {" "}
+            I don't know <br></br> what to watch{" "}
+          </NavLink>
         </button>
       </div>
     </div>
