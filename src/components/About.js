@@ -19,7 +19,7 @@ const memberInfo = [
   },
   {
     name: "Anca",
-    surname: "Gheorge",
+    surname: "Gheorghe",
     img: "https://i.ibb.co/9ZCW0gh/IMG-7584.jpg",
     linkedin: "https://www.linkedin.com/in/anca-laura-gheorghe-7001151b9/",
     github: "https://github.com/anca2196",
@@ -30,7 +30,7 @@ const About = () => {
   return (
     <div className="container">
       <div className="intro">
-        <p>
+        <p className="intro-p">
           Hello lazy fellow! We are a group of 3 fullstack developers from the
           Wild Code School coding bootcamp. Please feel free to visit our
           LinkedIn and GitHub profiles to know more about each of us.

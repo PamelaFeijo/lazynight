@@ -4,6 +4,10 @@ import CountrySelector from "./CountrySelector";
 const Contact = () => {
   return (
     <div className="form-container">
+      <div className="contact-us">
+        <h1>We like food, movies and... friends! Get in contact!</h1>
+      </div>
+
       <form>
         <label for="fname">First Name</label>
         <input
@@ -19,6 +23,14 @@ const Contact = () => {
           id="lname"
           name="lastname"
           placeholder="Your last name.."
+        ></input>
+
+        <label for="email">Email</label>
+        <input
+          type="text"
+          id="email"
+          name="email"
+          placeholder="Your email.."
         ></input>
 
         <label for="country">Country</label>
