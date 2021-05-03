@@ -7,11 +7,10 @@ const Title = (props) => {
     } else if (props.location === "/movie") {
       return "Your LazyNight Movie";
     } else if (props.location === "/food") {
-      return "Your LazyNight Movie";
+      return "Your LazyNight Food";
     }
   };
-
-  console.log(props);
+  
   return (
     <div className="title">
       <h3>{getTitleMessage()}</h3>

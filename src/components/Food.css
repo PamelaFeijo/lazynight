@@ -1,0 +1,54 @@
+.quiz-btn {
+  margin: 30px;
+  padding: 5px 50px;
+  background-color: rgb(100, 100, 216);
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.result-image {
+  margin: auto;
+  width: 300px;
+}
+.result-recipe {
+  text-align: justify;
+  margin: 0 50px;
+}
+.result-ingredient {
+  margin-bottom: 20px;
+}
+.result-title {
+  color: #79a0ff;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 20px 20px 20px;  
+}
+
+.result-recipeTitle {
+  font-size: 2rem;
+  padding-bottom: 20px;
+}
+
+.result-recipe {
+  margin: 0 50px;
+  text-align: justify;
+}
+
+@media screen and (min-width: 900px) {
+    .result-recipe {
+        margin: 0 100px;        
+      }
+    body{
+        font-size: 1.2em;
+    }  
+}
+
+@media screen and (min-width: 1200px) {
+    .result-recipe {
+        margin: 0 200px;        
+      }
+      body{
+        font-size: 1.45em;
+    }      
+}
