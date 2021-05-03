@@ -6,7 +6,7 @@ const QuizButton = () => {
     <div>
       <div>
         <button className="quiz-button">
-          <NavLink className="bttnTEXT" to="/food-quiz">
+          <NavLink className="bttnTEXT" to="/food">
             {" "}
             I don't know <br></br> what to eat{" "}
           </NavLink>

@@ -15,7 +15,6 @@ const Banner = (props) => {
     }
   };
 
-  console.log(props);
   return (
     <div className="banner">
       <h2>{getBannerMessage()}</h2>
