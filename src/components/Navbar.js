@@ -14,8 +14,8 @@ const Navbar = () => {
         <div className="logo-container">
           <p className="logo">LAZYNIGHT</p>
         </div>
-        <ul className={click ? "nav-options active" : "nav-options"}>       
-           <li className="option" onClick={closeMobileMenu}>
+        <ul className={click ? "nav-options active" : "nav-options"}>
+          <li className="option" onClick={closeMobileMenu}>
             <Link to="/" className="home">
               HOME
             </Link>
@@ -27,8 +27,7 @@ const Navbar = () => {
             <Link to="/movie">MOVIE QUIZ</Link>
           </li>
           <li className="option" onClick={closeMobileMenu}>
-            <Link to="/about">ABOUT</Link>             
-
+            <Link to="/about">ABOUT</Link>
           </li>
           <li className="option" onClick={closeMobileMenu}>
             <Link to="/contact">CONTACT</Link>

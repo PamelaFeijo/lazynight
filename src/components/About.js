@@ -1,5 +1,6 @@
 import "./About.css";
 import Member from "./Member";
+import Bounce from "react-reveal";
 
 const memberInfo = [
   {
@@ -36,19 +37,21 @@ const About = () => {
           LinkedIn and GitHub profiles to know more about each of us.
         </p>
       </div>
-      <div className="member-container">
-        {memberInfo.map((member) => (
-          <div className="member-card">
-            <Member
-              name={member.name}
-              surname={member.surname}
-              img={member.img}
-              linkedin={member.linkedin}
-              github={member.github}
-            />
-          </div>
-        ))}
-      </div>
+      <Bounce left cascade>
+        <div className="member-container">
+          {memberInfo.map((member) => (
+            <div className="member-card">
+              <Member
+                name={member.name}
+                surname={member.surname}
+                img={member.img}
+                linkedin={member.linkedin}
+                github={member.github}
+              />
+            </div>
+          ))}
+        </div>
+      </Bounce>
     </div>
   );
 };

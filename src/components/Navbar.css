@@ -9,7 +9,7 @@
 }
 .logo {
   font-weight: bold;
-  font-size: 1.25rem;  
+  font-size: 1.25rem;
 }
 .logo-nav {
   display: flex;
@@ -26,23 +26,23 @@
 .mobile-option {
   display: none;
 }
- .option :hover {
-    background: black;
-    border-radius: 3px;
-    color: white;
-    padding: 10px 10px;
-    width: 80%;
-    align-self: center;
-    border-radius: 3px;
-} 
+.option :hover {
+  background: rgb(5, 5, 43);
+  border-radius: 3px;
+  color: white;
+  padding: 10px 10px;
+  width: 80%;
+  align-self: center;
+  border-radius: 3px;
+}
 .mobile-menu {
   display: none;
 }
 @media (min-width: 1057px) {
   .nav-options {
-    padding-left: 450px;    
+    padding-left: 450px;
   }
-} 
+}
 
 @media (max-width: 800px) {
   /*Mobile View */
@@ -85,7 +85,7 @@
     font-size: 1.125rem;
   }
   .option :hover {
-    background: black;
+    background: #001024;
     border-radius: 3px;
     color: white;
     padding: 20px 0px;
@@ -93,7 +93,7 @@
     align-self: center;
     border-radius: 3px;
   }
- }
+}
 .mobile-menu {
   display: block;
 }

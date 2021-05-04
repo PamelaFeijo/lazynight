@@ -71,6 +71,7 @@ code {
 .progress-container {
   display: flex;
   justify-content: center;
+  margin: 20px 0;
 }
 .progress-bar {
   background-color: #d8d8d8;
@@ -106,7 +107,7 @@ code {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
   font-size: 12px;
-  background-color: #be70f2;
+  background-color: #f6d98d;
   margin: 20px;
 }
 
