@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import ProgressBar from "./ProgressBar";
 import Bounce from "react-reveal/Bounce";
+import Result from "./Result";
 import "./Movie.css";
 
 function Movie(props) {
@@ -132,35 +134,10 @@ function Movie(props) {
       {done === 100 ? (
         <div className="quiz-result">
           {showMovieResult ? (
-            <div className="movie-result">
-              <img
-                className="movie-poster"
-                src={`http://img.omdbapi.com/?i=${showMovie.imdbID}&h=600&apikey=4d9435f5`}
-                alt="poster"
-              />
-              <div className="result-details">
-                <h1 className="result-title">{showMovie.Title}</h1>
-                <p className="result-year">
-                  {" "}
-                  <span>Year: </span> {showMovie.Year}
-                </p>
-                <p className="result-duration">
-                  {" "}
-                  <span>Duration: </span> {showMovie.Runtime}
-                </p>
-                <p className="result-rating">
-                  {" "}
-                  <span>Rating: </span> {showMovie.Ratings[0].Value}
-                </p>
-                <p className="result-actors">
-                  {" "}
-                  <span>Staring: </span> {showMovie.Actors}
-                </p>
-                <p className="result-director">
-                  <span>Directed by:</span> {showMovie.Director}
-                </p>
-                <p className="result-plot">{showMovie.Plot}</p>
-              </div>
+            <div>
+              <Link to="./Result.js">
+                <Result showMovie={showMovie} />
+              </Link>
             </div>
           ) : (
             <> </>
@@ -178,7 +155,7 @@ function Movie(props) {
               display: done === 100 ? "none" : "flex",
             }}
           >
-            <Bounce cascade>
+            <Bounce cascade mountOnEnter>
               <button className="quiz-question">
                 {content[movieQuestion].question}
               </button>

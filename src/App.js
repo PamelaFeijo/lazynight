@@ -7,11 +7,11 @@ import { Switch, Route } from "react-router-dom";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Header from "./components/Header";
-import Home from "./components/Home";
 import MovieDatabase from "./components/MovieDatabase";
 import Random from "./components/RandomMovieOption";
 import Footer from "./components/Footer";
 import QuizButton from "./components/QuizButton";
+import Result from "./components/Result";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
@@ -103,6 +103,7 @@ function App() {
               showMovieResult={showMovieResult}
             />
           </Route>
+          <Route path="/result" component={Result} />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
         </Switch>
