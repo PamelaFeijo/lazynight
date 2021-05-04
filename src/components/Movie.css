@@ -15,7 +15,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 50%;
+  width: 60%;
   margin: auto;
 }
 
@@ -49,13 +49,14 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
   font-size: 20px;
-  width: 9rem;
+  width: 45%;
   height: 9rem;
-  margin: 10px 0px;
+  margin: 10px 10px;
 }
 
 .quiz-answer:hover {
   box-shadow: 5px 7px 8px 3px rgba(0, 0, 0, 0.48);
+  background-color: #be70f2;
 }
 
 /* progress-bar */
@@ -112,6 +113,56 @@
   font-size: 12px;
   background-color: #be70f2;
   margin: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+  .quiz-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: auto;
+  }
+
+  .quiz-question {
+    padding: 20px;
+    background-color: #001024;
+    color: white;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    width: 100%;
+  }
+  .quiz-container-answers {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .quiz-answer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(100, 100, 216);
+    color: white;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    width: 40%;
+    height: 9rem;
+    margin: 10px 10px;
+  }
+
+  .quiz-answer:hover {
+    box-shadow: 5px 7px 8px 3px rgba(0, 0, 0, 0.48);
+    background-color: #be70f2;
+  }
 }
 
 @media only screen and (max-width: 700px) {
