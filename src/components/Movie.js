@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ProgressBar from "./ProgressBar";
+import Bounce from "react-reveal/Bounce";
 import "./Movie.css";
 
 function Movie(props) {
@@ -177,23 +178,25 @@ function Movie(props) {
               display: done === 100 ? "none" : "flex",
             }}
           >
-            <button className="quiz-question">
-              {content[movieQuestion].question}
-            </button>
+            <Bounce cascade>
+              <button className="quiz-question">
+                {content[movieQuestion].question}
+              </button>
 
-            <div className="quiz-container-answers">
-              {content[movieQuestion].answerOptions.map(
-                (answerOption, index) => (
-                  <button
-                    key={index}
-                    className="quiz-answer"
-                    onClick={() => handleAddDone(answerOption.value)}
-                  >
-                    {answerOption.answer}
-                  </button>
-                )
-              )}
-            </div>
+              <div className="quiz-container-answers">
+                {content[movieQuestion].answerOptions.map(
+                  (answerOption, index) => (
+                    <button
+                      key={index}
+                      className="quiz-answer"
+                      onClick={() => handleAddDone(answerOption.value)}
+                    >
+                      {answerOption.answer}
+                    </button>
+                  )
+                )}
+              </div>
+            </Bounce>
           </div>
           <>
             <ProgressBar
