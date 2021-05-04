@@ -5,7 +5,7 @@ import Bounce from "react-reveal";
 const memberInfo = [
   {
     name: "Pamela",
-    surname: "Feijò",
+    surname: "Feijó",
     img: "https://i.ibb.co/Nm8fq4r/pamela.jpg",
     linkedin: "https://www.linkedin.com/in/pamelafeijo/",
     github: "https://github.com/PamelaFeijo",

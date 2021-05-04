@@ -135,9 +135,7 @@ function Movie(props) {
         <div className="quiz-result">
           {showMovieResult ? (
             <div>
-              <Link to="./Result.js">
-                <Result showMovie={showMovie} />
-              </Link>
+              <Result showMovie={showMovie} showMovieResult={showMovieResult} />
             </div>
           ) : (
             <> </>
@@ -155,7 +153,7 @@ function Movie(props) {
               display: done === 100 ? "none" : "flex",
             }}
           >
-            <Bounce cascade mountOnEnter>
+            <Bounce cascade>
               <button className="quiz-question">
                 {content[movieQuestion].question}
               </button>

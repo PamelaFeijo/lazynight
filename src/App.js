@@ -9,6 +9,8 @@ import Contact from "./components/Contact";
 import Header from "./components/Header";
 import MovieDatabase from "./components/MovieDatabase";
 import Random from "./components/RandomMovieOption";
+import FoodDatabase from "./FoodDatabase";
+import RandomFoodDatabase from "./components/RandomFoodDatabase";
 import Footer from "./components/Footer";
 import QuizButton from "./components/QuizButton";
 import Result from "./components/Result";
@@ -23,14 +25,13 @@ function App() {
   const [genre, setGenre] = useState("");
   const [decade, setDecade] = useState("");
   const [showMovie, setShowMovie] = useState("");
-  const [showFood, setShowFood] = useState("");
   const [showMovieResult, setShowMovieResult] = useState(false);
+  const [showFood, setShowFood] = useState("");
+  const [showFoodResult, setShowFoodResult] = useState(false);
+  const [type, setType] = useState("");
+  const [ingredient, setIngredient] = useState("");
 
-  function getFood() {
-    fetch("https:/www.themealdb.com/api/json/v1/1/random.php")
-      .then((resp) => resp.json())
-      .then((dataf) => setShowFood(dataf.meals[0]));
-  }
+  console.log(showFood);
 
   //Random Movie Function
   function RandomMovie() {
@@ -76,6 +77,50 @@ function App() {
       });
   }
 
+  function getFood() {
+    fetch(
+      "https://www.themealdb.com/api/json/v1/1/lookup.php?i=" + RandomFood()
+    )
+      .then((resp) => resp.json())
+      .then((dataf) => {
+        setShowFood(dataf.meals[0]);
+        setShowFoodResult(true);
+      });
+  }
+
+  //Random Food
+  function RandomFood() {
+    let i = Math.floor(Math.random() * 6) + 0;
+    if (type === "chicken") {
+      if (ingredient === "mediterranean") {
+        return FoodDatabase.chicken[0][i];
+      } else if (ingredient === "american") {
+        return FoodDatabase.chicken[1][i];
+      } else {
+        return FoodDatabase.chicken[2][i];
+      }
+    } else if (type === "beef") {
+      if (ingredient === "mediterranean") {
+        return FoodDatabase.beef[0][i];
+      } else if (ingredient === "american") {
+        return FoodDatabase.beef[1][i];
+      } else {
+        return FoodDatabase.beef[2][i];
+      }
+    } else if (type === "vegetarian") {
+      if (ingredient === "mediterranean") {
+        return FoodDatabase.vegetarian[0][i];
+      } else if (ingredient === "american") {
+        return FoodDatabase.vegetarian[1][i];
+      } else {
+        return FoodDatabase.vegetarian[2][i];
+      }
+    } else {
+      let j = Math.floor(Math.random() * 15) + 0;
+      return RandomFoodDatabase[j];
+    }
+  }
+
   // function getFood() {
   //   fetch("https://www.themealdb.com/api/json/v2/9973533/random.php")
   //     .then((res) => res.json())
@@ -86,20 +131,31 @@ function App() {
     <div className="App page-container">
       <div className="content-wrap">
         <Header />
-
         <Switch>
           <Route exact path="/" component={QuizButton} />
           <Route path="/food">
-            <Food showFood={showFood} getFood={getFood} />
+            <Food
+              showFood={showFood}
+              showMovie={showMovie}
+              getFood={getFood}
+              type={type}
+              setType={setType}
+              ingredient={ingredient}
+              setIngredient={setIngredient}
+              showFoodResult={showFoodResult}
+              showMovieResult={showMovieResult}
+            />
           </Route>
           <Route path="/movie">
             <Movie
               showMovie={showMovie}
+              showFood={showFood}
               getMovie={getMovie}
               genre={genre}
               setGenre={setGenre}
               decade={decade}
               setDecade={setDecade}
+              showFoodResult={showFoodResult}
               showMovieResult={showMovieResult}
             />
           </Route>
