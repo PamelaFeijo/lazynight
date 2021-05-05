@@ -38,13 +38,26 @@
 .mobile-menu {
   display: none;
 }
-@media (min-width: 1057px) {
-  .nav-options {
-    padding-left: 450px;
-  }
-}
 
-@media (max-width: 800px) {
+@media (min-width: 830px) {  
+  .nav-options {
+   padding-left: 150px;  
+   grid-gap: 25px;  
+  }
+} 
+
+@media (min-width: 1400px) {   
+  .nav-options {
+   padding-left: 450px;  
+   grid-gap: 50px;  
+   font-size: 1.50rem;
+  }
+  .logo {   
+    font-size: 1.70rem;
+  }
+}  
+
+@media (max-width: 810px) {
   /*Mobile View */
   .header {
     padding: 0px 10px;
@@ -97,3 +110,5 @@
 .mobile-menu {
   display: block;
 }
+
+
