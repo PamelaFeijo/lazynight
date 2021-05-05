@@ -2,18 +2,10 @@ import { useState } from "react";
 import Bounce from "react-reveal/Bounce";
 import "./Food.css";
 import ProgressBar from "./ProgressBar";
-import Result from "./Result";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 function Food(props) {
-  const {
-    showFood,
-    getFood,
-    setType,
-    type,
-    setIngredient,
-    showFoodResult,
-  } = props;
+  const { getFood, setType, type, setIngredient } = props;
   const [done, setDone] = useState(0);
   const [foodQuestion, setFoodQuestion] = useState(0);
 
@@ -111,24 +103,17 @@ function Food(props) {
     },
   ];
 
+  const history = useHistory();
+
+  const handleNavigation = () => {
+    getFood();
+    history.push("/result");
+  };
+
   return (
     <div>
       {done === 100 ? (
-        <div className="quiz-result">
-          {/* {showFoodResult ? (
-            <div>
-              <Result showFood={showFood} showFoodResult={showFoodResult} />
-            </div>
-          ) : (
-            <> </>
-          )} */}
-
-          <Link to="/result">
-            <button className="quiz-btn" onClick={getFood}>
-              Get Result
-            </button>
-          </Link>
-        </div>
+        handleNavigation()
       ) : (
         <>
           <div
@@ -139,7 +124,7 @@ function Food(props) {
           >
             <Bounce cascade>
               <button className="quiz-question">
-                <h2>{content[foodQuestion].question}</h2>
+                <h2 className="question">{content[foodQuestion].question}</h2>
               </button>
               <div className="quiz-container-answers">
                 {content[foodQuestion].answerOptions.map(

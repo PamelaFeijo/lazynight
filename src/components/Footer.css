@@ -13,12 +13,19 @@
 .title-footer > span {
   color: #f6d98d;
 }
+.icons {
+  height: 50px;
+}
 
 .icons-footer {
   margin: 0 10px 30px 10px;
   font-size: 20px;
   color: white;
   margin-bottom: 30px;
+}
+.icons-footer:hover {
+  font-size: 30px;
+  transition: 0.2s;
 }
 
 p {

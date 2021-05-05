@@ -18,7 +18,7 @@ function ProgressBar({ done, handleAddDone, handleCutDone }) {
             {done < 100 ? `${done}%` : "You got it!"}
           </div>
           <div
-            class="quiz-done"
+            className="quiz-done"
             style={{
               display: done !== 100 ? "none" : "flex",
             }}
@@ -27,7 +27,7 @@ function ProgressBar({ done, handleAddDone, handleCutDone }) {
           </div>
         </div>
         <button
-        class="next-btn"
+        className="next-btn"
         onClick={handleAddDone}
         style={{
           display: done === 100 ? "none" : "flex",

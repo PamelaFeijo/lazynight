@@ -70,10 +70,11 @@
   background-color: var(--main-color);
   color: white;
   border-radius: 10px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bold;
   font-size: 20px;
   width: 100%;
+}
+.question {
+  font-size: 20px;
 }
 .quiz-container-answers {
   display: flex;
@@ -92,9 +93,7 @@
   background-color: var(--base-color);
   color: white;
   border-radius: 10px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bold;
-  font-size: 20px;
+  font-size: 10px;
   width: 45%;
   height: 9rem;
   margin: 10px 10px;
@@ -133,8 +132,7 @@
   width: 0;
   opacity: 0;
   transition: 1s ease 0.3s;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bold;
+
   font-size: 16px;
 }
 
@@ -143,8 +141,7 @@
   color: white;
   text-align: center;
   border-radius: 10px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bold;
+
   font-size: 12px;
   background-color: var(--button-color);
   margin: 20px;
@@ -155,8 +152,7 @@
   color: white;
   text-align: center;
   border-radius: 10px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bold;
+
   font-size: 12px;
   background-color: var(--button-color);
   margin: 20px;
@@ -176,8 +172,7 @@
     background-color: var(--main-color);
     color: white;
     border-radius: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
+
     font-size: 20px;
     width: 100%;
   }
@@ -198,8 +193,7 @@
     background-color: var(--base-color);
     color: white;
     border-radius: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
+
     font-size: 20px;
     width: 40%;
     height: 9rem;
@@ -228,8 +222,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
+
     font-size: 20px;
     padding: 10px 20px;
     background-color: var(--main-color);
@@ -253,8 +246,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
+
     font-size: 20px;
     padding: 10px 20px;
     background-color: var(--base-color);

@@ -6,8 +6,7 @@
   background-color: var(--base-color);
   color: white;
   border-radius: 10px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bold;
+
   font-size: 20px;
 }
 
@@ -26,8 +25,7 @@
     background-color: var(--main-color);
     color: white;
     border-radius: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
+
     font-size: 20px;
     width: 100%;
   }
@@ -48,8 +46,7 @@
     background-color: var(--base-color);
     color: white;
     border-radius: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
+
     font-size: 20px;
     width: 40%;
     height: 9rem;
@@ -78,8 +75,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
+
     font-size: 20px;
     padding: 10px 20px;
     background-color: var(--main-color);
@@ -103,8 +99,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
+
     font-size: 20px;
     padding: 10px 20px;
     background-color: var(--base-color);
