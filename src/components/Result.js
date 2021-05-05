@@ -38,7 +38,7 @@ function Result(props) {
               <div className="title-wrap">
                 <h1 className="card-subtitle">{showMovie.Title}</h1>
               </div>
-              <img className="img-suggestion" src={showMovie.Poster} />
+              <img className="img-suggestion" src={showMovie.Poster} alt="poster"/>
               <Link to="/infoMovie">
                 <button className="more">Movie details</button>
               </Link>
@@ -59,7 +59,7 @@ function Result(props) {
                 <div className="title-wrap">
                   <h1>{showMovie.Title}</h1>
                 </div>
-                <img className="img-suggestion" src={showMovie.Poster} />
+                <img className="img-suggestion" src={showMovie.Poster} alt="poster"/>
                 <Link to="/infoMovie">
                   <button className="more">Movie details</button>
                 </Link>
@@ -68,7 +68,7 @@ function Result(props) {
           ) : (
             <div className="result-container">
               <div className="not-yet">
-                No suggestion yet? Take one of our quiz!
+                No suggestions yet? Take one of our quizzes!
               </div>
 
               <div className="suggestion" style={{ height: "200px" }}>

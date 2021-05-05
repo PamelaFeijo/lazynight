@@ -1,10 +1,12 @@
+@import "./../global-variables.css";
+
 .banner {
-  background: #001024;
+  background: var(--main-color);
   padding: 3rem 1.72rem;
   color: #fff;
   text-transform: uppercase;
 }
 
 .banner-span {
-  color: #f6d98e;
+  color: var(--accent-color);
 }

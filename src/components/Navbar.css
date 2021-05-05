@@ -1,3 +1,5 @@
+@import "./../global-variables.css";
+
 /*Desktop View*/
 .header {
   display: flex;
@@ -19,7 +21,7 @@
 .nav-options {
   padding-left: 150px;
   display: grid;
-  grid-template-columns: repeat(5, auto);
+  grid-template-columns: repeat(6, auto);
   grid-gap: 50px;
   list-style-type: none;
 }
@@ -27,9 +29,9 @@
   display: none;
 }
 .option :hover {
-  background: rgb(5, 5, 43);
+  /* background: rgba(5, 5, 43, 0.26); */
   border-radius: 3px;
-  color: white;
+  color: black;
   padding: 10px 10px;
   width: 80%;
   align-self: center;
@@ -98,7 +100,7 @@
     font-size: 1.125rem;
   }
   .option :hover {
-    background: #001024;
+    background: var(--main-color);
     border-radius: 3px;
     color: white;
     padding: 20px 0px;

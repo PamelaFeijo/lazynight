@@ -1,6 +1,8 @@
+@import "./../global-variables.css";
+
 .main-footer {
   color: white;
-  background-color: #001024;
+  background-color: var(--main-color);
   padding-top: 0.75em;
   bottom: 0;
   width: 100%;
@@ -11,7 +13,7 @@
 }
 
 .title-footer > span {
-  color: #f6d98d;
+  color: var(--accent-color);
 }
 .icons {
   height: 50px;

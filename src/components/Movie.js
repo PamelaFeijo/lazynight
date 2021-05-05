@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import ProgressBar from "./ProgressBar";
 import Bounce from "react-reveal/Bounce";
 import "./Movie.css";
