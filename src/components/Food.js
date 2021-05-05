@@ -2,17 +2,14 @@ import { useState } from "react";
 import Bounce from "react-reveal/Bounce";
 import "./Food.css";
 import ProgressBar from "./ProgressBar";
-import Result from "./Result";
 import { Link } from "react-router-dom";
 
 function Food(props) {
-  const {
-    showFood,
+  const {    
     getFood,
     setType,
     type,
-    setIngredient,
-    showFoodResult,
+    setIngredient,    
   } = props;
   const [done, setDone] = useState(0);
   const [foodQuestion, setFoodQuestion] = useState(0);
