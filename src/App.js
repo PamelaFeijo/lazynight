@@ -121,12 +121,6 @@ function App() {
     }
   }
 
-  // function getFood() {
-  //   fetch("https://www.themealdb.com/api/json/v2/9973533/random.php")
-  //     .then((res) => res.json())
-  //     .then((dataf) => setShowFood(dataf.meals[0]));
-  // }
-
   return (
     <div className="App page-container">
       <div className="content-wrap">

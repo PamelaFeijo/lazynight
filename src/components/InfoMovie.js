@@ -1,19 +1,19 @@
 import { Link } from "react-router-dom"
 
-const InfoMovie = ({ showMovie, showMovieResult}) => {    
+const InfoMovie = ({ showMovie }) => {    
     return(
         <div>            
             <div className="result-container">  
                <h1>{showMovie.Title}</h1>                          
                <img className="img-suggestion" src={showMovie.Poster} alt={showMovie.Title} />
-               <p>Year:</p>
+               <h3>Year:</h3>
                <p>{showMovie.Year}</p> 
-               <p>Genre:</p>
+               <h3>Genre:</h3>
                <p>{showMovie.Genre}</p>
-               <p>Actors:</p>
+               <h3>Actors:</h3>
                <p>{showMovie.Actors}</p>                               
-               <p>Plot:</p> 
-               <p>{showMovie.Plot}</p>  
+               <h3>Plot:</h3> 
+               <p className="result-description">{showMovie.Plot}</p>  
                <div>
                   <Link to="/result">
                     <button className="quiz-btn"> Back to Results </button>

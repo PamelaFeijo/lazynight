@@ -24,7 +24,7 @@ function Result(props) {
       {showMovieResult ? (
         <div className="suggestion">
           <h1>{showMovie.Title}</h1>
-          <img className="img-suggestion" src={showMovie.Poster} />
+          <img className="img-suggestion" src={showMovie.Poster} alt={showMovie.Title}/>
           <Link to="/infoMovie">
           <button className="more">More info</button>
           </Link>
