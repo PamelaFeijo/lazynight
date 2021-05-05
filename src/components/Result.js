@@ -20,7 +20,15 @@ function Result(props) {
               src={showFood.strMealThumb}
               alt=""
             />
-            <button className="more">Ingredients & Recipe</button>
+            <div className="another-container">
+              <Link to="/infoFood">
+                {" "}
+                <button className="more">Ingredients & Recipe</button>
+              </Link>
+              <Link to="/food">
+                <button className="another">Get another meal</button>
+              </Link>
+            </div>
           </div>
           {showMovieResult ? (
             <div className="suggestion">
@@ -31,7 +39,9 @@ function Result(props) {
                 <h1 className="card-subtitle">{showMovie.Title}</h1>
               </div>
               <img className="img-suggestion" src={showMovie.Poster} />
-              <button className="more">More info</button>
+              <Link to="/infoMovie">
+                <button className="more">Movie details</button>
+              </Link>
             </div>
           ) : (
             <div className="suggestion">
@@ -50,7 +60,9 @@ function Result(props) {
                   <h1>{showMovie.Title}</h1>
                 </div>
                 <img className="img-suggestion" src={showMovie.Poster} />
-                <button className="more">Movie details</button>
+                <Link to="/infoMovie">
+                  <button className="more">Movie details</button>
+                </Link>
               </div>
             </div>
           ) : (
@@ -75,9 +87,6 @@ function Result(props) {
       )}
 
       <div className="another-container">
-        <Link to="/food">
-          <button className="another">Get another meal</button>
-        </Link>
         <Link to="/movie">
           <button className="another">Get another movie</button>
         </Link>

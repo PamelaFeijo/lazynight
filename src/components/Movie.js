@@ -1,16 +1,11 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import ProgressBar from "./ProgressBar";
 import Bounce from "react-reveal/Bounce";
 import "./Movie.css";
 
 function Movie(props) {
-  const {    
-    getMovie,
-    setGenre,
-    genre,
-    setDecade,    
-  } = props;
+  const { getMovie, setGenre, genre, setDecade } = props;
   const [movieQuestion, setMovieQuestion] = useState(0);
   const [done, setDone] = useState(0);
 
@@ -126,24 +121,17 @@ function Movie(props) {
     },
   ];
 
+  const history = useHistory();
+
+  const handleNavigation = () => {
+    getMovie();
+    history.push("/result");
+  };
+
   return (
     <div>
       {done === 100 ? (
-        <div className="quiz-result">
-          {/* {showMovieResult ? (
-            <div>
-              <Result showMovie={showMovie} showMovieResult={showMovieResult} />
-            </div>
-          ) : (
-            <> </>
-          )} */}
-
-          <Link to="/result">
-            <button className="movie-btn" onClick={getMovie}>
-              Get Result
-            </button>
-          </Link>
-        </div>
+        handleNavigation()
       ) : (
         <>
           <div
