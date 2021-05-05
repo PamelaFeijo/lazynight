@@ -7,21 +7,21 @@ const QuizButton = () => {
     <div className="buttons">
       <Bounce top cascade>
         <div>
-          <button className="quiz-button">
             <NavLink className="bttnTEXT" to="/food">
+            <button className="quiz-button">
               {" "}
               I don't know <br></br> what to eat <br></br>🍔 🍕 🍝 🍣 🥗
               <br></br>
+              </button>
             </NavLink>
-          </button>
         </div>
         <div>
-          <button className="quiz-button">
             <NavLink className="bttnTEXT" to="/movie">
+            <button className="quiz-button">
               {" "}
               I don't know <br></br> what to watch<br></br>🚢 💘 💣 🤡 👻
+              </button>
             </NavLink>
-          </button>
         </div>
       </Bounce>
     </div>
