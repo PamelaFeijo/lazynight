@@ -4,8 +4,7 @@
   background-color: rgb(100, 100, 216);
   color: white;
   border-radius: 10px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bold;
+
   font-size: 20px;
 }
 
@@ -24,8 +23,7 @@
   background-color: #001024;
   color: white;
   border-radius: 10px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bold;
+
   font-size: 20px;
   width: 100%;
 }
@@ -46,8 +44,7 @@
   background-color: rgb(100, 100, 216);
   color: white;
   border-radius: 10px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bold;
+
   font-size: 20px;
   width: 45%;
   height: 9rem;
@@ -86,8 +83,6 @@
   width: 0;
   opacity: 0;
   transition: 1s ease 0.3s;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bold;
   font-size: 16px;
 }
 
@@ -96,8 +91,6 @@
   color: white;
   text-align: center;
   border-radius: 10px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bold;
   font-size: 12px;
   background-color: #be70f2;
   margin: 20px;
@@ -108,8 +101,7 @@
   color: white;
   text-align: center;
   border-radius: 10px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bold;
+
   font-size: 12px;
   background-color: #be70f2;
   margin: 20px;
@@ -129,8 +121,7 @@
     background-color: #001024;
     color: white;
     border-radius: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
+
     font-size: 20px;
     width: 100%;
   }
@@ -151,8 +142,7 @@
     background-color: rgb(100, 100, 216);
     color: white;
     border-radius: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
+
     font-size: 20px;
     width: 40%;
     height: 9rem;
@@ -181,8 +171,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
+
     font-size: 20px;
     padding: 10px 20px;
     background-color: #001024;
@@ -206,8 +195,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
+
     font-size: 20px;
     padding: 10px 20px;
     background-color: rgb(100, 100, 216);
