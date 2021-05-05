@@ -157,7 +157,7 @@ function Movie(props) {
           >
             <Bounce cascade>
               <button className="quiz-question">
-                {content[movieQuestion].question}
+                <h2>{content[movieQuestion].question}</h2>
               </button>
 
               <div className="quiz-container-answers">
