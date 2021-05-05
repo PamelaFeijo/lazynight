@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import ProgressBar from "./ProgressBar";
 import Bounce from "react-reveal/Bounce";
 import Result from "./Result";
@@ -128,19 +128,56 @@ function Movie(props) {
       ],
     },
   ];
+  const history = useHistory();
+
+  const handleNavigation = () => {
+    getMovie();
+    history.push("/result");
+  };
 
   return (
     <div>
       {done === 100 ? (
-        <div className="quiz-result">
-          {/* {showMovieResult ? (
-            <div>
-              <Result showMovie={showMovie} showMovieResult={showMovieResult} />
-            </div>
-          ) : (
-            <> </>
-          )} */}
+        handleNavigation()
+      ) : (
+        <>
+          <div
+            className='quiz-container'
+            style={{
+              display: done === 100 ? "none" : "flex",
+            }}
+          >
+            <Bounce cascade>
+              <button className='quiz-question'>
+                {content[movieQuestion].question}
+              </button>
 
+              <div className='quiz-container-answers'>
+                {content[movieQuestion].answerOptions.map(
+                  (answerOption, index) => (
+                    <button
+                      key={index}
+                      className='quiz-answer'
+                      onClick={() => handleAddDone(answerOption.value)}
+                    >
+                      {answerOption.answer}
+                    </button>
+                  )
+                )}
+              </div>
+            </Bounce>
+          </div>
+          <>
+            <ProgressBar
+              done={done}
+              handleAddDone={handleAddDone}
+              handleCutDone={handleCutDone}
+            />
+          </>
+        </>
+      )}
+      {/* {done === 100 ? (
+        <div className="quiz-result">
           <Link to="/result">
             <button className="movie-btn" onClick={getMovie}>
               Get Result
@@ -183,7 +220,7 @@ function Movie(props) {
             />
           </>
         </>
-      )}
+      )} */}
     </div>
   );
 }
