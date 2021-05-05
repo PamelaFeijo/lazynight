@@ -59,12 +59,12 @@ function Result(props) {
                 No suggestion yet? Take one of our quiz!
               </div>
 
-              <div className="suggestion">
+              <div className="suggestion" style={{ height: "200px" }}>
                 <Link to="/food">
                   <button className="more">Get a food suggestion</button>
                 </Link>
               </div>
-              <div className="suggestion">
+              <div className="suggestion" style={{ height: "200px" }}>
                 <Link to="/food">
                   <button className="more">Get a movie suggestion</button>
                 </Link>

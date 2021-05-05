@@ -139,7 +139,7 @@ function Food(props) {
           >
             <Bounce cascade>
               <button className="quiz-question">
-                <h2>{content[foodQuestion].question}</h2>
+                <h2 className="question">{content[foodQuestion].question}</h2>
               </button>
               <div className="quiz-container-answers">
                 {content[foodQuestion].answerOptions.map(
