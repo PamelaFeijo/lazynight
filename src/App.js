@@ -18,6 +18,8 @@ import Result from "./components/Result";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { faCheckSquare, faCoffee } from "@fortawesome/free-solid-svg-icons";
+import InfoFood from "./components/InfoFood";
+import InfoMovie from "./components/InfoMovie";
 
 library.add(fab, faCheckSquare, faCoffee);
 
@@ -168,6 +170,24 @@ function App() {
               />
             )}
           />
+           <Route
+            path="/infoFood"
+            render={() => (
+              <InfoFood
+                showFood={showFood}
+                showFoodResult={showFoodResult}               
+              />
+            )}
+          />     
+          <Route
+            path="/infoMovie"
+            render={() => (
+              <InfoMovie                
+                showMovie={showMovie}
+                showMovieResult={showMovieResult}
+              />
+            )}
+          />        
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
         </Switch>

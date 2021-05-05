@@ -3,14 +3,16 @@ import { Link } from "react-router-dom";
 
 function Result(props) {
   const { showFood, showMovie, showFoodResult, showMovieResult } = props;
-  console.log(showFood);
+  
   return (
     <div className="result-container">
       {showFoodResult ? (
         <div className="suggestion">
           <h1>{showFood.strMeal}</h1>
-          <img className="img-suggestion" src={showFood.strMealThumb} alt="" />
-          <button className="more">Food info</button>
+          <img className="img-suggestion" src={showFood.strMealThumb} alt={showFood.strMealThumb} />
+          <Link to="/infoFood">
+            <button className="more">Food info</button>
+          </Link>
         </div>
       ) : (
         <div className="suggestion">
@@ -23,7 +25,9 @@ function Result(props) {
         <div className="suggestion">
           <h1>{showMovie.Title}</h1>
           <img className="img-suggestion" src={showMovie.Poster} />
+          <Link to="/infoMovie">
           <button className="more">More info</button>
+          </Link>
         </div>
       ) : (
         <div className="suggestion">

@@ -12,8 +12,7 @@
   margin-bottom: 50px;
 }
 
-.suggestion {
-  display: flex;
+.suggestion {  
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -29,7 +28,7 @@
   width: 80%;
 }
 
-.more {
+.more { 
   width: 30%;
   background-color: #f6d98d;
   border-radius: 5px;
