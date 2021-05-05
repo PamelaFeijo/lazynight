@@ -27,6 +27,9 @@ const Navbar = () => {
             <Link to="/movie">MOVIE QUIZ</Link>
           </li>
           <li className="option" onClick={closeMobileMenu}>
+            <Link to="/result">YOUR RESULT</Link>
+          </li>
+          <li className="option" onClick={closeMobileMenu}>
             <Link to="/about">ABOUT</Link>
           </li>
           <li className="option" onClick={closeMobileMenu}>
