@@ -133,17 +133,19 @@ function Movie(props) {
     <div>
       {done === 100 ? (
         <div className="quiz-result">
-          {showMovieResult ? (
+          {/* {showMovieResult ? (
             <div>
               <Result showMovie={showMovie} showMovieResult={showMovieResult} />
             </div>
           ) : (
             <> </>
-          )}
+          )} */}
 
-          <button className="movie-btn" onClick={getMovie}>
-            Get Result
-          </button>
+          <Link to="/result">
+            <button className="movie-btn" onClick={getMovie}>
+              Get Result
+            </button>
+          </Link>
         </div>
       ) : (
         <>

@@ -31,8 +31,6 @@ function App() {
   const [type, setType] = useState("");
   const [ingredient, setIngredient] = useState("");
 
-  console.log(showFood);
-
   //Random Movie Function
   function RandomMovie() {
     let i = Math.floor(Math.random() * 7) + 0;
@@ -159,7 +157,17 @@ function App() {
               showMovieResult={showMovieResult}
             />
           </Route>
-          <Route path="/result" component={Result} />
+          <Route
+            path="/result"
+            render={() => (
+              <Result
+                showFood={showFood}
+                showFoodResult={showFoodResult}
+                showMovie={showMovie}
+                showMovieResult={showMovieResult}
+              />
+            )}
+          />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
         </Switch>

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Result(props) {
   const { showFood, showMovie, showFoodResult, showMovieResult } = props;
-
+  console.log(showFood);
   return (
     <div className="result-container">
       {showFoodResult ? (

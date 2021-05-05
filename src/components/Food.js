@@ -3,6 +3,7 @@ import Bounce from "react-reveal/Bounce";
 import "./Food.css";
 import ProgressBar from "./ProgressBar";
 import Result from "./Result";
+import { Link } from "react-router-dom";
 
 function Food(props) {
   const {
@@ -15,7 +16,7 @@ function Food(props) {
   } = props;
   const [done, setDone] = useState(0);
   const [foodQuestion, setFoodQuestion] = useState(0);
-  console.log(showFood);
+
   function handleAddDone(value) {
     if (value === 0) {
       setType("chicken");
@@ -114,17 +115,19 @@ function Food(props) {
     <div>
       {done === 100 ? (
         <div className="quiz-result">
-          {showFoodResult ? (
+          {/* {showFoodResult ? (
             <div>
               <Result showFood={showFood} showFoodResult={showFoodResult} />
             </div>
           ) : (
             <> </>
-          )}
+          )} */}
 
-          <button className="quiz-btn" onClick={getFood}>
-            Get Result
-          </button>
+          <Link to="/result">
+            <button className="quiz-btn" onClick={getFood}>
+              Get Result
+            </button>
+          </Link>
         </div>
       ) : (
         <>
