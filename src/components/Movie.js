@@ -2,17 +2,14 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import ProgressBar from "./ProgressBar";
 import Bounce from "react-reveal/Bounce";
-import Result from "./Result";
 import "./Movie.css";
 
 function Movie(props) {
-  const {
-    showMovie,
+  const {    
     getMovie,
     setGenre,
     genre,
-    setDecade,
-    showMovieResult,
+    setDecade,    
   } = props;
   const [movieQuestion, setMovieQuestion] = useState(0);
   const [done, setDone] = useState(0);

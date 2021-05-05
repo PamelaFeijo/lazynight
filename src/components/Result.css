@@ -11,8 +11,17 @@
   margin-bottom: 50px;
 }
 
-.suggestion {
-  display: flex;
+.result-container  > h3{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.result-description {
+  text-align: justify;
+  margin: 0px 10px;
+}
+
+.suggestion {  
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -61,7 +70,7 @@
   margin: 30px 0 30px 0;
 }
 
-.more {
+.more { 
   background-color: #f6d98d;
   border-radius: 10px;
   margin: 30px 0;
