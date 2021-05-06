@@ -4,7 +4,7 @@ An application used to get food and movie suggestions based on quizzes, built wi
 
 ## Project Status
 
-First version is live.
+First version is live. You can see our working demo here.(https://lazynight.netlify.app/movie)
 
 ## Installation and Setup Instructions
 
@@ -30,8 +30,8 @@ To Visit App:
 
 Font Awesome is a friction-less way to use icons in React.
 
-`npm i --save @fortawesome/fontawesome-svg-core`
-`npm install --save @fortawesome/free-solid-svg-icons`
+`npm i --save @fortawesome/fontawesome-svg-core` <br/>
+`npm install --save @fortawesome/free-solid-svg-icons`<br/>
 `npm install --save @fortawesome/react-fontawesome` 
 
 React Reveal is an animation framework for React. 
@@ -42,7 +42,7 @@ React-Select, the select control for React.
 
 `yarn add react-select`
 
-React-select-country-list take country-list as reference, and make it more friendly to react-select.
+React-select-country-list takes country-list as a reference, and makes it more friendly to react-select.
 
 `npm install react-select-country-list --save`
 
