@@ -69,7 +69,7 @@ function App() {
   // FETCHES WITH API KEYS
 
   function getMovie() {
-    fetch("http://www.omdbapi.com/?i=" + RandomMovie() + "&apikey=be19834b")
+    fetch("https://www.omdbapi.com/?i=" + RandomMovie() + "&apikey=be19834b")
       .then((res) => res.json())
       .then((data) => {
         setShowMovie(data);
@@ -164,24 +164,21 @@ function App() {
               />
             )}
           />
-           <Route
+          <Route
             path="/infoFood"
             render={() => (
-              <InfoFood
-                showFood={showFood}
-                showFoodResult={showFoodResult}               
-              />
+              <InfoFood showFood={showFood} showFoodResult={showFoodResult} />
             )}
-          />     
+          />
           <Route
             path="/infoMovie"
             render={() => (
-              <InfoMovie                
+              <InfoMovie
                 showMovie={showMovie}
                 showMovieResult={showMovieResult}
               />
             )}
-          />        
+          />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
         </Switch>

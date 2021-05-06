@@ -102,7 +102,7 @@
   font-weight: bold;
   width: 45%;
   height: 5rem;
-  margin: 10px 10px;
+  margin: 10px 0px;
 }
 
 .quiz-answer:hover {
@@ -171,7 +171,7 @@
   margin: 20px;
   width: 70px;
 }
-
+/* 
 @media only screen and (max-width: 900px) {
   .quiz-container {
     display: flex;
@@ -218,7 +218,7 @@
     box-shadow: 5px 7px 8px 3px rgba(0, 0, 0, 0.48);
     background-color: var(--accent-color);
   }
-}
+} */
 
 @media only screen and (max-width: 700px) {
   /* quiz page */
@@ -309,7 +309,7 @@
     font-size: 20px;
     font-weight: bold;
     width: 100%;
-    margin: 10px 10px;
+    margin: 10px 0px;
   }
 }
 

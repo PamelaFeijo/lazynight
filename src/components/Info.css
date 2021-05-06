@@ -81,6 +81,10 @@ ul {
   width: 80%;
 }
 
+.back-container {
+  margin: 40px 0;
+}
+
 @media only screen and (max-width: 700px) {
   .info-result-container {
     display: flex;
@@ -124,7 +128,7 @@ ul {
     background-color: #ff3cac;
     background-image: linear-gradient(0deg, #784ba0 0%, #2b86c5 100%);
     border-radius: 30px;
-    margin: 0px auto 0px auto;
+    margin: 20px auto 30px auto;
   }
   .info-img {
     margin: 10px 0;
@@ -141,7 +145,12 @@ ul {
     margin-bottom: 40px;
   }
   .card-p {
-    font-size: 12px;
+    font-size: 14px;
     color: white;
+  }
+  .result-description {
+    margin: auto;
+    width: 80%;
+    font-size: 16px;
   }
 }
