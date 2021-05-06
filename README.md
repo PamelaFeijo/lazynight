@@ -48,7 +48,7 @@ React-select-country-list takes country-list as a reference, and makes it more f
 
 ## Project Screenshot
 
-![screenshot](src/assets/lazynight.jpg)
+![screenshot](src/assets/lazynight.png)
 
 ## Contact
 
