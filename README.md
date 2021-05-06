@@ -4,7 +4,7 @@ An application used to get food and movie suggestions based on quizzes, built wi
 
 ## Project Status
 
-First version is live. You can see our working demo [here].(https://lazynight.netlify.app/movie)
+First version is live. You can see our working demo [here](https://lazynight.netlify.app/movie).
 
 ## Installation and Setup Instructions
 
