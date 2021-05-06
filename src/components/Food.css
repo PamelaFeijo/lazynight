@@ -102,7 +102,7 @@
   font-weight: bold;
   width: 45%;
   height: 5rem;
-  margin: 10px 10px;
+  margin: 10px 0px;
 }
 
 .quiz-answer:hover {
@@ -309,7 +309,7 @@
     font-size: 20px;
     font-weight: bold;
     width: 100%;
-    margin: 10px 10px;
+    margin: 10px 0px;
   }
 }
 
