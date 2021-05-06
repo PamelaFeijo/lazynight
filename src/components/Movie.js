@@ -68,37 +68,37 @@ function Movie(props) {
     {
       question: "How do you feel?",
       answerOptions: [
-        { answer: "I miss the 90s", value: 4 },
+        { answer: "I want a 90s movie!", value: 4 },
         { answer: "2005 was only 5 years ago", value: 5 },
         { answer: "I should make a Tik Tok right now", value: 6 },
         { answer: "I feel nothing.", value: 6 },
       ],
     },
     {
-      question: "What's your favourite city?",
+      question: "Perfect time for a movie?",
       answerOptions: [
-        { answer: "Paris" },
-        { answer: "London" },
-        { answer: "Berlin" },
-        { answer: "Moscow" },
+        { answer: "Lazy Sunday afternoon" },
+        { answer: "Date night" },
+        { answer: "Casual weekday evening" },
+        { answer: "On a long flight" },
       ],
     },
     {
-      question: "Your childhood here was:",
+      question: "Your childhood hero was:",
       answerOptions: [
         { answer: "Harry Potter" },
         { answer: "Luke Skywalker" },
         { answer: "Iron man" },
-        { answer: "Elle Woods" },
+        { answer: "Frodo" },
       ],
     },
     {
-      question: "What's your favourite Britney song?",
+      question: "During the movie...",
       answerOptions: [
-        { answer: "Oops I did it again!" },
-        { answer: "Toxic" },
-        { answer: "Gimme More" },
-        { answer: "I love Rock'n'Roll" },
+        { answer: "I'm on my phone checking Instagram!" },
+        { answer: "I'm asking questions and making comments" },
+        { answer: "I'm super focused" },
+        { answer: "I fall asleep in the first 5 minutes" },
       ],
     },
     {
