@@ -2,8 +2,8 @@
 
 .main-footer {
   color: white;
-  background-color: #2b86c5;
-  background-image: linear-gradient(0deg, #2b86c5 0%, #784ba0 100%);
+  background-color: var(--gradient-2);
+  background-image: linear-gradient(0deg, var(--gradient-2) 0%, var(--gradient-1) 100%);
   padding-top: 0.75em;
   bottom: 0;
   width: 100%;
