@@ -46,6 +46,10 @@ React-select-country-list takes country-list as a reference, and makes it more f
 
 `npm install react-select-country-list --save`
 
+## Project Screenshot
+
+![screenshot](src/assets/lazynight.png)
+
 ## Contact
 
 Anca - [Github](https://github.com/anca2196)
