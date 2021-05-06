@@ -2,6 +2,14 @@ import { Link } from "react-router-dom";
 import "./Info.css";
 
 const InfoFood = ({ showFood }) => {
+
+  let x = showFood.strInstructions.split('.')
+  let recipe = x.map((e,index) => 
+      (<p 
+      key={index}
+      className={ index+1 < x.length ? "recipe-line" : "hidden"}> <span className="nr">{index+1}. </span> {e}. </p>) )
+
+
   return (
     <div>
       <div className="info-result-container">
@@ -32,7 +40,9 @@ const InfoFood = ({ showFood }) => {
               <p className="card-p">Recipe</p>
             </div>
             <div className="recipe">
-              <p className="result-description">{showFood.strInstructions}</p>
+              <div className="result-description">
+              {recipe}
+              </div>
             </div>
           </div>
           <div>
