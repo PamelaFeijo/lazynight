@@ -14,7 +14,7 @@ import RandomFoodDatabase from "./components/RandomFoodDatabase";
 import Footer from "./components/Footer";
 import QuizButton from "./components/QuizButton";
 import Result from "./components/Result";
-import ScrollToTop from "./components/ScrollToTop";
+
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { faCheckSquare, faCoffee } from "@fortawesome/free-solid-svg-icons";
@@ -69,7 +69,7 @@ function App() {
   // FETCHES WITH API KEYS
 
   function getMovie() {
-    fetch("http://www.omdbapi.com/?i=" + RandomMovie() + "&apikey=be19834b")
+    fetch("https://www.omdbapi.com/?i=" + RandomMovie() + "&apikey=be19834b")
       .then((res) => res.json())
       .then((data) => {
         setShowMovie(data);
