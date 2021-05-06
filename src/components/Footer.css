@@ -14,7 +14,7 @@
 }
 
 .title-footer > span {
-  color: var(--accent-color);
+  color: var(--main-color);
 }
 .icons {
   height: 50px;
