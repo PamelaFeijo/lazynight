@@ -14,7 +14,7 @@ import RandomFoodDatabase from "./components/RandomFoodDatabase";
 import Footer from "./components/Footer";
 import QuizButton from "./components/QuizButton";
 import Result from "./components/Result";
-
+import ScrollToTop from "./components/ScrollToTop";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { faCheckSquare, faCoffee } from "@fortawesome/free-solid-svg-icons";
@@ -164,24 +164,21 @@ function App() {
               />
             )}
           />
-           <Route
+          <Route
             path="/infoFood"
             render={() => (
-              <InfoFood
-                showFood={showFood}
-                showFoodResult={showFoodResult}               
-              />
+              <InfoFood showFood={showFood} showFoodResult={showFoodResult} />
             )}
-          />     
+          />
           <Route
             path="/infoMovie"
             render={() => (
-              <InfoMovie                
+              <InfoMovie
                 showMovie={showMovie}
                 showMovieResult={showMovieResult}
               />
             )}
-          />        
+          />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
         </Switch>

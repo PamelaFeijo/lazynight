@@ -26,7 +26,7 @@ const InfoMovie = ({ showMovie }) => {
               <p className="card-p">Genre</p>
             </div>
 
-            <p>{showMovie.Genre}</p>
+            <p className="result-description">{showMovie.Genre}</p>
             <div className="info-title">
               <p className="card-p">Actors</p>
             </div>
@@ -35,7 +35,7 @@ const InfoMovie = ({ showMovie }) => {
               <p className="card-p">Plot</p>
             </div>
             <p className="result-description">{showMovie.Plot}</p>
-            <div>
+            <div className="back-container">
               <Link to="/result">
                 <button className="another"> Back to Results </button>
               </Link>
