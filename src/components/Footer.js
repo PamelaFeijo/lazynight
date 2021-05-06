@@ -14,7 +14,9 @@ const Footer = () => {
       </div>
       <hr />
       <div>
-        <p>&copy;{new Date().getFullYear()} LazyNight | All rights reserved</p>
+        <p className="footer">
+          &copy;{new Date().getFullYear()} LazyNight | All rights reserved
+        </p>
       </div>
     </div>
   );
