@@ -1,76 +1,62 @@
-# Getting Started with Create React App
+## :last_quarter_moon_with_face: lazynight :star2:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An application used to get food and movie suggestions based on quizzes, built with React, JavaScript, and CSS.
 
-## Available Scripts
+## Project Status
 
-In the project directory, you can run:
+First version is live. You can see our working demo [here](https://lazynight.netlify.app).
 
-### `yarn start`
+## Installation and Setup Instructions
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Clone down this repository. You will need `node` and `npm` installed globally on your machine.  
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Installation:
 
-### `yarn test`
+`npm install`  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To Run Test Suite:  
 
-### `yarn build`
+`npm test`  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To Start Server:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+`npm start`  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To Visit App:
 
-### `yarn eject`
+`localhost:3000`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+#### Install:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Font Awesome is a friction-less way to use icons in React.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+`npm i --save @fortawesome/fontawesome-svg-core` <br/>
+`npm install --save @fortawesome/free-solid-svg-icons`<br/>
+`npm install --save @fortawesome/react-fontawesome` 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+React Reveal is an animation framework for React. 
 
-## Learn More
+`npm install react-reveal --save` 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+React-Select, the select control for React. 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+`yarn add react-select`
 
-### Code Splitting
+React-select-country-list takes country-list as a reference, and makes it more friendly to react-select.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+`npm install react-select-country-list --save`
 
-### Analyzing the Bundle Size
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Anca - [Github](https://github.com/anca2196)
 
-### Making a Progressive Web App
+Francesco - [Github](https://github.com/francescoluciani)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Pamela - [Github](https://github.com/PamelaFeijo)
 
-### Advanced Configuration
+This was a 4 week long project built during our Web Development Bootcamp at [Wild Code School](https://www.wildcodeschool.com/en-GB).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Feel free to contact us!
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-<<<<<<< HEAD
-# lazynight
-# lazynight
-# lazynight
-=======
->>>>>>> 40e01549ee5605de7a60efecc2440b7d1c55aa6e
