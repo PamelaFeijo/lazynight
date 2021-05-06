@@ -21,13 +21,13 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="option" onClick={closeMobileMenu}>
-            <Link to="/food">FOOD QUIZ</Link>
+            <Link to="/food">FOODQUIZ</Link>
           </li>
           <li className="option" onClick={closeMobileMenu}>
-            <Link to="/movie">MOVIE QUIZ</Link>
+            <Link to="/movie">MOVIEQUIZ</Link>
           </li>
           <li className="option" onClick={closeMobileMenu}>
-            <Link to="/result">YOUR RESULT</Link>
+            <Link to="/result">RESULTS</Link>
           </li>
           <li className="option" onClick={closeMobileMenu}>
             <Link to="/about">ABOUT</Link>
