@@ -1,7 +1,7 @@
 :root {
     --gradient-1: #7096F5;
     --gradient-2: #E2E9FC;
-    --main-color: #001024;
+    --main-color: linear-gradient(0deg, #784ba0 0%, #2b86c5 100%);;
     --base-color: #7878ec;
     --accent-color: #FFF0CC;
     --button-color: #8DAEFF;
