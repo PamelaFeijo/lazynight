@@ -23,7 +23,7 @@ function Result(props) {
             <div className="another-container">
               <Link to="/infoFood">
                 {" "}
-                <button className="more">Ingredients & Recipe</button>
+                <button className="another">Ingredients & Recipe</button>
               </Link>
               <Link to="/food">
                 <button className="another">Get another meal</button>
@@ -38,15 +38,24 @@ function Result(props) {
               <div className="title-wrap">
                 <h1 className="card-subtitle">{showMovie.Title}</h1>
               </div>
-              <img className="img-suggestion" src={showMovie.Poster} alt="poster"/>
-              <Link to="/infoMovie">
-                <button className="more">Movie details</button>
-              </Link>
+              <img
+                className="img-suggestion"
+                src={showMovie.Poster}
+                alt="poster"
+              />
+              <div className="another-container">
+                <Link to="/infoMovie">
+                  <button className="another">Movie details</button>
+                </Link>
+                <Link to="/movie">
+                  <button className="another">Get another movie</button>
+                </Link>
+              </div>
             </div>
           ) : (
             <div className="suggestion">
               <Link to="/movie">
-                <button className="more">Get also a movie suggestion</button>
+                <button className="another">Get also a movie suggestion</button>
               </Link>
             </div>
           )}
@@ -56,12 +65,31 @@ function Result(props) {
           {showMovieResult ? (
             <div className="result-container">
               <div className="suggestion">
-                <div className="title-wrap">
-                  <h1>{showMovie.Title}</h1>
+                <div className="background">
+                  <h2 className="card-title">Your Lazynight movie</h2>
                 </div>
-                <img className="img-suggestion" src={showMovie.Poster} alt="poster"/>
-                <Link to="/infoMovie">
-                  <button className="more">Movie details</button>
+                <div className="title-wrap">
+                  <h1 className="card-subtitle">{showMovie.Title}</h1>
+                </div>
+                <img
+                  className="img-suggestion"
+                  src={showMovie.Poster}
+                  alt="poster"
+                />
+                <div className="another-container">
+                  <Link to="/infoMovie">
+                    <button className="another">Movie details</button>
+                  </Link>
+                  <Link to="/movie">
+                    <button className="another">Get another movie</button>
+                  </Link>
+                </div>
+              </div>
+              <div className="suggestion">
+                <Link to="/movie">
+                  <button className="another">
+                    Get also a meal suggestion
+                  </button>
                 </Link>
               </div>
             </div>
@@ -71,26 +99,20 @@ function Result(props) {
                 No suggestions yet? Take one of our quizzes!
               </div>
 
-              <div className="suggestion" style={{ height: "200px" }}>
+              <div className="suggestion">
                 <Link to="/food">
-                  <button className="more">Get a food suggestion</button>
+                  <button className="another">Get a food tip</button>
                 </Link>
               </div>
-              <div className="suggestion" style={{ height: "200px" }}>
+              <div className="suggestion">
                 <Link to="/food">
-                  <button className="more">Get a movie suggestion</button>
+                  <button className="another">Get a movie tip</button>
                 </Link>
               </div>
             </div>
           )}
         </div>
       )}
-
-      <div className="another-container">
-        <Link to="/movie">
-          <button className="another">Get another movie</button>
-        </Link>
-      </div>
     </div>
   );
 }

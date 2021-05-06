@@ -1,7 +1,9 @@
 @import "./../global-variables.css";
 
 .banner {
-  background: var(--main-color);
+  background-color: #ff3cac;
+  background-image: linear-gradient(0deg, #784ba0 0%, #2b86c5 100%);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding: 3rem 1.72rem;
   color: #fff;
   text-transform: uppercase;
