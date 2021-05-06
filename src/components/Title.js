@@ -4,8 +4,6 @@ const Title = (props) => {
   const getTitleMessage = () => {
     if (props.location === "/") {
       return "How can we help?";
-    } else if (props.location === "/food") {
-      return "Your LazyNight Food";
     }
   };
 
