@@ -67,9 +67,12 @@
 
 .quiz-question {
   padding: 20px;
-  background-color: var(--main-color);
+  background-color: #ff3cac;
+  background-image: linear-gradient(0deg, #ff3cac 0%, #784ba0 100%);
+  border: white solid 3px;
+
   color: white;
-  border-radius: 10px;
+  border-radius: 40px;
   font-size: 20px;
   width: 100%;
 }
@@ -90,19 +93,25 @@
   justify-content: center;
   align-items: center;
   padding: 10px 20px;
-  background-color: var(--base-color);
+  background-color: #ff3cac;
+  background-image: linear-gradient(0deg, #784ba0 0%, #2b86c5 100%);
   color: white;
-  border-radius: 10px;
+  border-radius: 40px;
+  border: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 20px;
+  font-weight: bold;
   width: 45%;
-  height: 9rem;
+  height: 5rem;
   margin: 10px 10px;
 }
 
 .quiz-answer:hover {
+  background-color: #a9c9ff;
+  background-image: linear-gradient(180deg, #a9c9ff 0%, #ffbbec 100%);
+
   box-shadow: 5px 7px 8px 3px rgba(0, 0, 0, 0.48);
-  background-color: var(--accent-color);
-  color: black;
+  border: none;
 }
 
 /* progress-bar */
@@ -110,6 +119,7 @@
 .progress-container {
   display: flex;
   justify-content: center;
+  margin: 30px 0;
 }
 .progress-bar {
   background-color: #d8d8d8;
@@ -121,7 +131,8 @@
 }
 
 .progress-done {
-  background: linear-gradient(to left,var(--gradient-1), var(--gradient-2));
+  background-color: #ff3cac;
+  background-image: linear-gradient(0deg, #ff3cac 0%, #784ba0 100%);
   box-shadow: 0 3px 3px -5px var(--main-color), 0 2px 5px var(--main-color);
   border-radius: 20px;
   color: #fff;
@@ -132,7 +143,7 @@
   width: 0;
   opacity: 0;
   transition: 1s ease 0.3s;
-
+  font-weight: bold;
   font-size: 16px;
 }
 
@@ -141,10 +152,11 @@
   color: white;
   text-align: center;
   border-radius: 10px;
-
   font-size: 12px;
+  font-weight: bold;
   background-color: var(--button-color);
   margin: 20px;
+  width: 70px;
 }
 
 .next-btn {
@@ -152,10 +164,11 @@
   color: white;
   text-align: center;
   border-radius: 10px;
-
   font-size: 12px;
+  font-weight: bold;
   background-color: var(--button-color);
   margin: 20px;
+  width: 70px;
 }
 
 @media only screen and (max-width: 900px) {
@@ -255,6 +268,30 @@
     width: 100%;
     height: 6rem;
     margin: 10px 0px;
+  }
+
+  .back-btn {
+    padding: 4px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: var(--button-color);
+    margin: 20px;
+    width: 50px;
+  }
+
+  .next-btn {
+    padding: 4px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: var(--button-color);
+    margin: 20px;
+    width: 50px;
   }
 }
 
