@@ -14,6 +14,10 @@ const Banner = (props) => {
       return "Contact us";
     } else if (props.location === "/result") {
       return "Your LazyNight Tips!";
+    } else if (props.location === "/infoMovie") {
+      return "Movie details";
+    } else if (props.location === "/infoFood") {
+      return "Ingredients and Recipe";
     }
   };
 
