@@ -48,7 +48,7 @@ React-select-country-list takes country-list as a reference, and makes it more f
 
 ## Project Screen Shot
 
-![](https://drive.google.com/drive/my-drive)
+![](./assets/lazynight.jpg)
 
 ## Contact
 
