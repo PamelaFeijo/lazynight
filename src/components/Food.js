@@ -2,7 +2,7 @@ import { useState } from "react";
 import Bounce from "react-reveal/Bounce";
 import "./Food.css";
 import ProgressBar from "./ProgressBar";
-import { Link, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 function Food(props) {
   const { getFood, setType, type, setIngredient } = props;

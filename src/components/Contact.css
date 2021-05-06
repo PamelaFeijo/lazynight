@@ -1,3 +1,5 @@
+@import "./../global-variables.css";
+
 .form-container {
   display: flex;
   justify-content: center;
@@ -19,7 +21,7 @@ form {
   padding: 10px;
   width: 50%;
   border-radius: 10px;
-  background-color: #001024;
+  background-color: var(--main-color);
   margin-bottom: 50px;
 }
 
@@ -48,7 +50,7 @@ textarea {
 
 .select {
   border-radius: 0px;
-  color: #001024;
+  color: var(--main-color);
   margin: auto;
   margin: 10px 0;
   width: 90%;
@@ -57,7 +59,7 @@ textarea {
 
 .submit {
   width: 30%;
-  background-color: #f6d98d;
+  background-color: var(--accent-color);
   border-radius: 5px;
   margin: 30px 0;
 }
@@ -78,7 +80,7 @@ textarea {
     padding: 10px;
     width: 80%;
     border-radius: 10px;
-    background-color: #001024;
+    background-color: var(--main-color);
     margin-bottom: 50px;
   }
 
@@ -111,7 +113,7 @@ textarea {
 
   .submit {
     width: 30%;
-    background-color: #f6d98d;
+    background-color: var(--accent-color);
     border-radius: 5px;
   }
 }

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import ProgressBar from "./ProgressBar";
 import Bounce from "react-reveal/Bounce";
 import "./Movie.css";
@@ -142,7 +142,7 @@ function Movie(props) {
           >
             <Bounce cascade>
               <button className="quiz-question">
-                {content[movieQuestion].question}
+                <h2>{content[movieQuestion].question}</h2>
               </button>
 
               <div className="quiz-container-answers">

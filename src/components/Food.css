@@ -1,7 +1,9 @@
+@import "./../global-variables.css";
+
 .quiz-btn {
   margin: 30px;
   padding: 5px 50px;
-  background-color: rgb(100, 100, 216);
+  background-color: var(--base-color);
   color: white;
   border-radius: 10px;
   font-weight: bold;
@@ -19,7 +21,7 @@
   margin-bottom: 20px;
 }
 .result-title {
-  color: #79a0ff;
+  color: var(--base-color);
   font-size: 2rem;
   font-weight: bold;
   margin: 0 20px 20px 20px;
@@ -53,16 +55,6 @@
   }
 }
 
-.movie-btn {
-  margin: 30px;
-  padding: 0 20px;
-  background-color: rgb(100, 100, 216);
-  color: white;
-  border-radius: 10px;
-
-  font-size: 20px;
-}
-
 /* quiz page */
 
 .quiz-container {
@@ -75,7 +67,7 @@
 
 .quiz-question {
   padding: 20px;
-  background-color: #001024;
+  background-color: var(--main-color);
   color: white;
   border-radius: 10px;
   font-size: 20px;
@@ -98,10 +90,10 @@
   justify-content: center;
   align-items: center;
   padding: 10px 20px;
-  background-color: rgb(100, 100, 216);
+  background-color: var(--base-color);
   color: white;
   border-radius: 10px;
-  font-size: 10px;
+  font-size: 20px;
   width: 45%;
   height: 9rem;
   margin: 10px 10px;
@@ -109,7 +101,8 @@
 
 .quiz-answer:hover {
   box-shadow: 5px 7px 8px 3px rgba(0, 0, 0, 0.48);
-  background-color: #be70f2;
+  background-color: var(--accent-color);
+  color: black;
 }
 
 /* progress-bar */
@@ -128,8 +121,8 @@
 }
 
 .progress-done {
-  background: linear-gradient(to left, #210976, #7c1486);
-  box-shadow: 0 3px 3px -5px #f2709c, 0 2px 5px #f2709c;
+  background: linear-gradient(to left,var(--gradient-1), var(--gradient-2));
+  box-shadow: 0 3px 3px -5px var(--main-color), 0 2px 5px var(--main-color);
   border-radius: 20px;
   color: #fff;
   display: flex;
@@ -150,7 +143,7 @@
   border-radius: 10px;
 
   font-size: 12px;
-  background-color: #be70f2;
+  background-color: var(--button-color);
   margin: 20px;
 }
 
@@ -161,7 +154,7 @@
   border-radius: 10px;
 
   font-size: 12px;
-  background-color: #be70f2;
+  background-color: var(--button-color);
   margin: 20px;
 }
 
@@ -176,7 +169,7 @@
 
   .quiz-question {
     padding: 20px;
-    background-color: #001024;
+    background-color: var(--main-color);
     color: white;
     border-radius: 10px;
 
@@ -197,7 +190,7 @@
     justify-content: center;
     align-items: center;
     padding: 10px 20px;
-    background-color: rgb(100, 100, 216);
+    background-color: var(--base-color);
     color: white;
     border-radius: 10px;
 
@@ -209,7 +202,7 @@
 
   .quiz-answer:hover {
     box-shadow: 5px 7px 8px 3px rgba(0, 0, 0, 0.48);
-    background-color: #be70f2;
+    background-color: var(--accent-color);
   }
 }
 
@@ -232,7 +225,7 @@
 
     font-size: 20px;
     padding: 10px 20px;
-    background-color: #001024;
+    background-color: var(--main-color);
     color: white;
     border-radius: 10px;
     width: 100%;
@@ -256,7 +249,7 @@
 
     font-size: 20px;
     padding: 10px 20px;
-    background-color: rgb(100, 100, 216);
+    background-color: var(--base-color);
     color: white;
     border-radius: 10px;
     width: 100%;
@@ -267,7 +260,7 @@
 
 /* Movie Results */
 .result-title {
-  color: #79a0ff;
+  color: var(--base-color);
 }
 span {
   font-weight: bold;
@@ -275,11 +268,6 @@ span {
 h1.result-title {
   font-size: 5em;
 }
-/* .movie-result{
-  display: flex;
-  /* flex-direction: column; */
-/* justify-content: center;
-} */
 
 .result-details {
   display: flex;

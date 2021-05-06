@@ -1,3 +1,5 @@
+@import "./../global-variables.css";
+
 .container {
   display: block;
   text-align: center;
@@ -18,7 +20,7 @@
 
 .member-card {
   width: 20%;
-  background-color: #001024;
+  background-color: var(--main-color);
   margin: 20px;
   padding: 20px;
   border-radius: 10px;
@@ -37,7 +39,7 @@ h2 {
 @media only screen and (max-width: 600px) {
   .member-card {
     width: 70%;
-    background-color: #001024;
+    background-color: var(--main-color);
     margin: 20px;
     padding: 20px;
     border-radius: 10px;

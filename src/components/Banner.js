@@ -3,7 +3,7 @@ import "./Banner.css";
 const Banner = (props) => {
   const getBannerMessage = () => {
     if (props.location === "/") {
-      return "Hey there! Don't know what to do tonight";
+      return "Hey there! Don't know what to do tonight?";
     } else if (props.location === "/about") {
       return "The Team";
     } else if (props.location === "/movie") {
@@ -13,7 +13,7 @@ const Banner = (props) => {
     } else if (props.location === "/contact") {
       return "Contact us";
     } else if (props.location === "/result") {
-      return "Your Lazynight tips!";
+      return "Your LazyNight Tips!";
     }
   };
 
