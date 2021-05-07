@@ -30,8 +30,8 @@
   display: none;
 }
 .option :hover {
-  background-color: #ff3cac;
-  background-image: linear-gradient(0deg, #ff3cac 0%, #784ba0 100%);
+  background-color: var(--main-color);
+  background-image: linear-gradient(0deg, var(--main-color) 0%, var(--gradient-1) 100%);
   border-radius: 3px;
   color: white;
   padding: 10px 10px;
@@ -42,19 +42,17 @@
 .mobile-menu {
   display: none;
 }
-
-/* @media (min-width: 855px) {
+@media (min-width: 855px) {
   .nav-options {
     padding-right: 50px;
-    grid-gap: 25px; 
+    grid-gap: 15px;
+    font-size: 1rem; 
   } 
-} */
-
+}
 @media (min-width: 1400px) {
   .nav-options {
-    padding-left: 120px;
-    padding-right: 120px;
-    grid-gap: 70px;
+    padding-left: 80px;   
+    grid-gap: 50px;
     font-size: 1.2rem;
   }
   .logo {

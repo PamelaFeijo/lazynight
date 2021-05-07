@@ -1,3 +1,5 @@
+@import "./../global-variables.css";
+
 .info-result-container {
   display: flex;
   justify-content: center;
@@ -35,8 +37,8 @@
   display: flex;
   justify-content: center;
   width: 80%;
-  background-color: #ff3cac;
-  background-image: linear-gradient(0deg, #784ba0 0%, #2b86c5 100%);
+  background-color: var(--main-color);
+  background-image: linear-gradient(0deg, var(--gradient-1) 0%, var(--gradient-2) 100%);
   border-radius: 30px;
   margin: 30px auto 30px auto;
 }
@@ -44,8 +46,8 @@
   display: flex;
   justify-content: center;
   width: 30%;
-  background-color: #ff3cac;
-  background-image: linear-gradient(0deg, #784ba0 0%, #2b86c5 100%);
+  background-color: var(--main-color);
+  background-image: linear-gradient(0deg, var(--gradient-1) 0%, var(--gradient-2) 100%);
   border-radius: 30px;
   margin: 30px auto 30px auto;
 }
@@ -58,7 +60,7 @@
 }
 
 p {
-  font-size: 1.2em;
+  font-size: 0.8em;
   margin: auto;
   text-align: center;
   line-height: 1.7;
@@ -66,10 +68,12 @@ p {
 
 ul {
   width: 40%;
-  line-height: 1.7;
+  line-height: 1.5;
   margin: 50px auto;
 }
-
+li {
+  font-size: 0.8em;
+}
 .recipe {
   width: 80%;
   margin: 50px auto;
@@ -94,8 +98,8 @@ ul {
     color: white;
     width: 90%;
     border-radius: 10px;
-    background-color: #ff3cac;
-    background-image: linear-gradient(0deg, #784ba0 0%, #2b86c5 100%);
+    background-color: var(--main-color);
+    background-image: linear-gradient(0deg, var(--gradient-1) 0%, var(--gradient-2) 100%);
 
     margin: auto;
     margin-bottom: 50px;
@@ -116,8 +120,8 @@ ul {
     display: flex;
     justify-content: center;
     width: 80%;
-    background-color: #ff3cac;
-    background-image: linear-gradient(0deg, #784ba0 0%, #2b86c5 100%);
+    background-color: var(--main-color);
+    background-image: linear-gradient(0deg, var(--gradient-1) 0%, var(--gradient-2) 100%);
     border-radius: 30px;
     margin: 30px auto 0px auto;
   }
@@ -125,8 +129,8 @@ ul {
     display: flex;
     justify-content: center;
     width: 50%;
-    background-color: #ff3cac;
-    background-image: linear-gradient(0deg, #784ba0 0%, #2b86c5 100%);
+    background-color: var(--main-color);
+    background-image: linear-gradient(0deg, var(--gradient-1) 0%, var(--gradient-2) 100%);
     border-radius: 30px;
     margin: 20px auto 30px auto;
   }
@@ -135,8 +139,11 @@ ul {
   }
   ul {
     width: 40%;
-    line-height: 1.7;
+    line-height: 1.5;
     margin: 30px auto;
+  }
+  li {
+    font-size: 14px;
   }
 
   .recipe {
@@ -150,7 +157,17 @@ ul {
   }
   .result-description {
     margin: auto;
-    width: 80%;
+    width: 90%;
     font-size: 16px;
   }
+}
+
+.hidden {
+  display: none;
+}
+
+span.nr {
+  font-size: 1.4em;
+  font-weight: bold;;
+  color:var(--gradient-1);
 }
