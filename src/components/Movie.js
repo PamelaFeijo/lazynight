@@ -49,7 +49,7 @@ function Movie(props) {
   }
 
   function handleCutDone() {
-    if (movieQuestion > 1) {
+    if (movieQuestion > 0) {
       setMovieQuestion(movieQuestion - 1);
       setDone(done - 20);
     }

@@ -86,7 +86,7 @@ function Result(props) {
                 </div>
               </div>
               <div className="suggestion">
-                <Link to="/movie">
+                <Link to="/food">
                   <button className="another">
                     Get also a meal suggestion
                   </button>
