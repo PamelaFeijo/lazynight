@@ -1,10 +1,23 @@
 import "./Contact.css";
 import CountrySelector from "./CountrySelector";
 import Bounce from "react-reveal";
+import { useState } from "react";
 
 const Contact = () => {
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  function handleSubmit() {
+    setIsSubmitted(true);
+  }
+
   return (
     <div className="form-container">
+      {isSubmitted ? (
+        <h1 className="claim">Thanks for contacting us!</h1>
+      ) : (
+        <div></div>
+      )}
+
       <div className="contact-us">
         <h1 className="claim">
           We like food, movies and... friends! Get in contact!
@@ -46,7 +59,12 @@ const Contact = () => {
             placeholder="Here goes your message for us.."
           ></textarea>
 
-          <input className="submit" type="submit" value="Submit"></input>
+          <input
+            className="submit"
+            type="submit"
+            value="Submit"
+            onClick={handleSubmit}
+          ></input>
         </form>
       </Bounce>
     </div>
