@@ -49,7 +49,7 @@ function Food(props) {
   }
 
   function handleCutDone() {
-    if (foodQuestion > 1) {
+    if (foodQuestion > 0) {
       setFoodQuestion(foodQuestion - 1);
       setDone(done - 20);
     }
