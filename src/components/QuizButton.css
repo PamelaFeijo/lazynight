@@ -2,7 +2,7 @@
 
 .buttons {
   margin: auto;
-  margin-bottom: 150px;
+  margin-bottom: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,6 +50,14 @@ div.buttons {
 }
 
 @media only screen and (max-width: 600px) {
+  .buttons {
+    margin: auto;
+    margin-bottom: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
   .quiz-button {
     line-height: 1.7;
     padding: 20px;
