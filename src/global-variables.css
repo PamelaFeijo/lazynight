@@ -1,11 +1,14 @@
 :root {
     --gradient-1: #784ba0;
-    --gradient-2: #2b86c5;
+    --gradient-2: #575aec;
     --main-color: #ff3cac;
  
 
     --hover-main-color: #a9c9ff;;
     --hover-gradient1: #a9c9ff;
     --hover-gradient2: #ffbbec;
-
+    
+    --base-color: #7878ec;
+    --accent-color: #FFF0CC;
+    --button-color: #8DAEFF;
 }
